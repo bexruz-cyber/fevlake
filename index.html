@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main2.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'PP Object Sans';
+            src: url(./fonts/otf/PPObjectSans-Heavy.otf);
+        }
+
+        @font-face {
+            font-family: 'pp-regular';
+            src: url(./fonts/otf/PPObjectSans-Regular.otf);
+        }
+
+        @font-face {
+            font-family: 'pp-500';
+            src: url(./fonts/otf/PPObjectSans-Medium.otf);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-top">
+                <a href="" class="header-logo"><img src="./img/header/header-logo.svg" alt="" class="header-logo"></a>
+                <nav class="navbar">
+                    <button class="header-hmgr"><img src="./img/header/hamburger.svg" alt=""></button>
+                    <div class="hamburger-bar">
+                        <a href="" class="hamburger-logo"><img src="./img/header/header-logo.svg" alt=""
+                                class="hamburger-logo-img"></a>
+                        <button class="exit-btn">
+                            <img src="./img/header/exit-img.svg" alt="" class="exit-img">
+                        </button>
+                        <ul class="hamburger-list">
+                            <li class="hamburger-item"><a href="" class="hamburger-link">» Проекты и кейсы</a></li>
+                            <li class="hamburger-item"><a href="" class="hamburger-link">» Услуги</a></li>
+                            <li class="hamburger-item"><a href="" class="hamburger-link">» Стать клиентом</a></li>
+                        </ul>
+                        <a href="tel:+7 (495) 123 45 67" class="hamburger-bar-phone">+7 (495) 123 45 67</a>
+                    </div>
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="" class="nav-link">» Проекты и кейсы</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">» Услуги</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">» Стать клиентом</a></li>
+                    </ul>
+                </nav>
+                <a href="tel:+7 (495) 123 45 67" class="header-phone">+7 (495) 123 45 67</a>
+            </div>
+            <div class="header-bottom">
+                <h1 class="header-title1">Одно агентство <br>
+                    <span class="header-title-span">для всех ваших задач </span>
+                    по IT-инфраструктуре
+                </h1>
+                <h1 class="header-title2">Одно агентство <br>
+                    <span class="header-title2-span">для всех <br> ваших задач </span>
+                    по <br> IT-инфраструктуре
+                </h1>
+                <h3 class="header-text">Оптимальные инженерные решения и надежная команда с 2012 года</h3>
+                <div class="header-data">
+                    <p class="header-data-text">#It-infrastructure</p>
+                    <p class="header-data-text">#cloud</p>
+                    <p class="header-data-text">#Data_Platforms</p>
+                </div>
+                <p class="header-text3">#Data_Platforms</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="platform">
+        <div class="platform_container">
+            <p class="platormTopText">
+                В <span>Fevlake</span> мы проектируем и обслуживаем IT-инфраструктуры любой сложности и работаем с
+                базами данных
+            </p>
+            <div class="platform_bottom">
+                <button class="platformSwoperBtn platformSwoperBtnLeft swiper-button-prev1"></button>
+                <button class="platformSwoperBtn platformSwoperBtnRight swiper-button-next1"></button>
+                <div class="swiper mySwiper">
+                    <div class="platformPaginationBox md_hidden">
+                        <button class="platformPaginationBtn platformPaginationBtnActive">DataPlatform</button>
+                        <button class="platformPaginationBtn">Infrastructure</button>
+                        <button class="platformPaginationBtn">Yandex.cloud</button>
+                        <button class="platformPaginationBtn lg_hidden">DevSecOps</button>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="platformBottomContent">
+                                <h2 class="platformBottomTitle">Data Platform</h2>
+                                <p class="platformBottomText">
+                                    Ускоряем работу приложений с данными, помогаем снизить стоимость владения и
+                                    выполнить требования
+                                    регулятора за счёт глубокой оптимизации дата-инфраструктуры, конфигурации СУБД,
+                                    архитектуры DWH
+                                </p>
+                                <ul class="platformSkilList">
+                                    <li class="platformSkilItem">Миграция</li>
+                                    <li class="platformSkilItem">Проектирование</li>
+                                    <li class="platformSkilItem">Мониторинг</li>
+                                    <li class="platformSkilItem">Kubernetes</li>
+                                    <li class="platformSkilItem">CI/CD</li>
+                                    <li class="platformSkilItem">ClickHouse</li>
+                                </ul>
+                                <h3 class="platformTextBg">Data Pla</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="platformBottomContent">
+                                <h2 class="platformBottomTitle">Infrastructure</h2>
+                                <p class="platformBottomText">
+                                    Строим высокопроизводительные современные инфраструктуры веб-приложений,
+                                    индивидуально оптимизированные для каждого заказчика по задачам, надёжности и
+                                    стоимости, выполняем сложные миграци
+                                </p>
+                                <ul class="platformSkilList">
+                                    <li class="platformSkilItem">Миграция</li>
+                                    <li class="platformSkilItem">Проектирование</li>
+                                    <li class="platformSkilItem">Мониторинг</li>
+                                    <li class="platformSkilItem">Kubernetes</li>
+                                    <li class="platformSkilItem">CI/CD</li>
+                                    <li class="platformSkilItem">ClickHouse</li>
+                                </ul>
+                                <h3 class="platformTextBg">Infrastru</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="platformBottomContent">
+                                <h2 class="platformBottomTitle">Yandex.Cloud</h2>
+                                <p class="platformBottomText">
+                                    Одни из первых стали ключевыми партнерами Yandex.Cloud и помогаем бизнесу быстро и
+                                    безопасно перевести и поддерживать инфраструктуру в облаке
+                                </p>
+                                <ul class="platformSkilList">
+                                    <li class="platformSkilItem">Миграция</li>
+                                    <li class="platformSkilItem">Проектирование</li>
+                                    <li class="platformSkilItem">Мониторинг</li>
+                                    <li class="platformSkilItem">Kubernetes</li>
+                                    <li class="platformSkilItem">CI/CD</li>
+                                    <li class="platformSkilItem">ClickHouse</li>
+                                </ul>
+                                <h3 class="platformTextBg">Yandex.</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="platformBottomContent">
+                                <h2 class="platformBottomTitle">DevSecOps</h2>
+                                <p class="platformBottomText">
+                                    Адаптируем и внедряем современные технологии и практики безопасной разработки,
+                                    доставки и эксплуатации приложений с учетом конкретного ИТ-ландшафта
+                                </p>
+                                <ul class="platformSkilList">
+                                    <li class="platformSkilItem">Миграция</li>
+                                    <li class="platformSkilItem">Проектирование</li>
+                                    <li class="platformSkilItem">Мониторинг</li>
+                                    <li class="platformSkilItem">Kubernetes</li>
+                                    <li class="platformSkilItem">CI/CD</li>
+                                    <li class="platformSkilItem">ClickHouse</li>
+                                </ul>
+                                <h3 class="platformTextBg">Data Pla</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="platformSwoperBtnBox">
+                    <div class="bntBoxSwiper">
+                        <button
+                            class="platformSwoperBtnMobile platformSwoperBtnLeftMobile swiper-button-prev1"></button>
+                        <button
+                            class="platformSwoperBtnMobile platformSwoperBtnRightMobile swiper-button-next1"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <div class="portfolio-container">
+            <h1 class="portfolio-title">Портфолио</h1>
+            <ul class="portfolio-list">
+                <li class="portfolio-item">
+                    <span class="portfolio-text-span">
+                        <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.602 9.9L12.826 5.434L8.602 0.967999H5.874L9.306 4.378V4.466H0.946V6.402H9.306V6.49L5.874 9.9H8.602Z"
+                                fill="#2B2B2B" />
+                        </svg>
+
+                    </span>
+                    <p class="portfolio-text">За 10 лет выполнили <span class="portfolio-text-span2">200 проектов</span>
+                        для наших клиентов</p>
+                </li>
+                <li class="portfolio-item">
+                    <span class="portfolio-text-span">
+                        <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.602 9.9L12.826 5.434L8.602 0.967999H5.874L9.306 4.378V4.466H0.946V6.402H9.306V6.49L5.874 9.9H8.602Z"
+                                fill="#2B2B2B" />
+                        </svg>
+
+                    </span>
+                    <p class="portfolio-text">80% заказчиков работают с нами более 3-х лет</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="yandex">
+        <div class="yandex-container">
+            <h1 class="yandex-title">Yandex.Cloud & <span class="yandex-title-span"> Fevlake</span></h1>
+            <div class="yandex-information">
+                <div class="yandex-profile">
+                    <img src="./img/yandex/yandex-face.png" alt="" class="yandex-glavniy">
+                    <div class="yandex-profile-about">
+                        <p class="yandex-profile-name">Имя Фамилия</p>
+                        <p class="yandex-profile-information">“Цитата автора будет прямо здесь”</p>
+                    </div>
+                </div>
+                <div class="yandex-texts">
+                    <div class="yandex-texts-text">
+                        <span class="yandex-texts-span">
+                            <img src="" alt="">
+                        </span>
+                        <p>Вместе с Yandex.Cloud развиваем сообщество инженеров и помогаем переезжать в облака с
+                            собственных серверов</p>
+                    </div>
+                    <div class="yandex-texts-text">
+                        <span class="yandex-texts-span">
+                            <img src="./img/yandex/yandex-right-icon.svg" alt="">
+                        </span>
+                        <p>В <span class="yandex-text-span"> 2018 </span> стали партнерами <br class="yandex-br">
+                            Yandex.Cloud</p>
+                    </div>
+                    <div class="yandex-texts-text">
+                        <span class="yandex-texts-span">
+                            <img src="./img/yandex/yandex-right-icon.svg" alt="">
+                        </span>
+                        <p>В <span class="yandex-text-span"> 2020 </span> запустили YouTube-практикум «Принимаем 10 000
+                            ивентов в секунду в Yandex.Cloud», который посетили 6 000 инженеров</p>
+                    </div>
+                    <div class="yandex-texts-text">
+                        <span class="yandex-texts-span">
+                            <img src="./img/yandex/yandex-right-icon.svg" alt="">
+                        </span>
+                        <p>В <span class="yandex-text-span"> 2021 </span> запустили программу Kubernetes x Yandex.Cloud
+                            для партнеров облака</p>
+                    </div>
+                    <div class="yandex-profile">
+                        <img src="./img/yandex/yandex-face.png" alt="" class="yandex-glavniy">
+                        <div class="yandex-profile-about">
+                            <p class="yandex-profile-name">Имя Фамилия</p>
+                            <p class="yandex-profile-information">“Цитата автора будет прямо здесь”</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="yandex-cards">
+                <div class="yandex-card">
+                    <img src="./img/yandex/yandex-card-img1.svg" alt="" class="yandex-card-img">
+                </div>
+                <div class="yandex-card">
+                    <img src="./img/yandex/yandex-card-img1.svg" alt="" class="yandex-card-img">
+                </div>
+                <div class="yandex-card">
+                    <img src="./img/yandex/yandex-card-img2.svg" alt="" class="yandex-card-img">
+                </div>
+                <div class="yandex-card">
+                    <img src="./img/yandex/yandex-card-img3.svg" alt="" class="yandex-card-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="komanda">
+        <img src="./img/komanda/komanda-bg.svg" alt="" class="komanda-img1">
+        <img src="./img/komanda/komanda-bg2.svg" alt="" class="komanda-img2">
+        <img src="./img/komanda/team-image2.svg" alt="" class="komanda-img3">
+        <img src="./img/komanda/team-mobile.svg" alt="" class="komanda-img4">
+        <div class="komanda-container">
+            <div class="komanda-top">
+                <h1 class="komanda-title">Команда <span class="komanda-title-span">Fevlake</span></h1>
+                <div class="komanda-information">
+                    <p class="komanda-text1">
+                        С 2012 года мы проектируем IT-инфраструктуры. <br>
+                        В командах работают инженеры только senior- и <br class="komanda-br-md"> middle-уровня, <br
+                            class="komanda-br">
+                        опыт специалистов — минимум 4 года
+                    </p>
+                    <p class="komanda-text2">
+                        Больше всего мы гордимся командой и ее экспертизой. Вы всегда можете обратиться к нам за советом
+                        или аналитикой даже вне проекта. Например, разберемся с долгим временем ответа в NodeJS или
+                        напишем udp-proxy на golang <br> <br>
+                        За 10 лет мы выработали собственные решения во многих областях инфраструктуры, которые помогли
+                        нам реализовать более 200 проектов. Широкий кругозор позволяет нам предлагать эффективные,
+                        проверенные и, самое главное, надежные решения для ваших задач <br> <br>
+                        Так же серьезно мы отбираем заказчиков, с которыми работаем, и... оно того стоит
+                    </p>
+                    <p class="komanda-text3">Илья Федичкин и Василий Озеров, основатели Fevlake</p>
+                </div>
+                <img src="./img/komanda/down-arrow.svg" alt="" class="komanda-down-arrow">
+            </div>
+            <div class="komanda-bottom">
+                <div class="komanda-proekt">
+                    <div class="komanda-profesi">
+                        <h5 class="komanda-profesi-title">Мы — профессионалы</h5>
+                        <div class="komanda-profesi-cards">
+                            <div class="komanda-profesi-card">
+                                <img src="./img/komanda/card-mini-bg6.svg" alt="" style="width: 44px;">
+                            </div>
+                            <div class="komanda-profesi-card">
+                                <img src="./img/komanda/card-mini-bg5.svg" alt="" style="width: 56px;">
+                            </div>
+                            <div class="komanda-profesi-card">
+                                <img src="./img/komanda/card-mini-bg2.svg" alt="" style="width: 63px;">
+                            </div>
+                            <div class="komanda-profesi-card">
+                                <img src="./img/komanda/card-mini-bg1.svg" alt="" style="width: 60px;">
+                            </div>
+                            <div class="komanda-profesi-card">
+                                <img src="./img/komanda/card-mini-bg4.svg" alt="" style="width: 56px;">
+                            </div>
+                            <div class="komanda-profesi-card">
+                                <img src="./img/komanda/card-mini-bg6.svg" alt="" style="width: 44px;">
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="komanda-proekt-title">Пример команды <span class="komanda-proekt-span">для вашего
+                            проекта</span></h5>
+                    <div class="komanda-proekt-cards">
+                        <div class="komanda-cards-col1">
+                            <div class="komanda-cards-card">
+                                <div class="komanda-card-main">
+                                    <h6 class="komanda-card-main-title">Team Lead Architect</h6>
+                                    <p class="komanda-card-main-text">Опыт: 8 лет</p>
+                                </div>
+                                <div class="komanda-cards-cards">
+                                    <div class="komanda-cards-card-mini">
+                                        <img src="./img/komanda/card-mini-bg1.svg" alt="" class="komanda-card-mini-img">
+                                    </div>
+                                    <div class="komanda-cards-card-mini">
+                                        <img src="./img/komanda/card-mini-bg2.svg" alt="" class="komanda-card-mini-img">
+                                    </div>
+                                    <div class="komanda-cards-card-mini">
+                                        <img src="./img/komanda/card-mini-bg3.svg" alt="" class="komanda-card-mini-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="komanda-cards-card">
+                                <div class="komanda-card-main">
+                                    <h6 class="komanda-card-main-title">Project Manager</h6>
+                                    <p class="komanda-card-main-text">Опыт:7 лет</p>
+                                </div>
+                                <div class="komanda-cards-cards" hidden>
+                                    <div class="komanda-cards-card-min">
+                                        <img src="./img/komanda/card-mini-bg.svg" alt="" class="komanda-card-mini-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="komanda-cards-card">
+                                <div class="komanda-card-main">
+                                    <h6 class="komanda-card-main-title color-black">Senior DevOps</h6>
+                                    <p class="komanda-card-main-text">Опыт: 8 лет</p>
+                                </div>
+                                <div class="komanda-cards-cards">
+                                    <div class="komanda-cards-card-mini">
+                                        <img src="./img/komanda/card-mini-bg1.svg" alt="" class="komanda-card-mini-img">
+                                    </div>
+                                    <div class="komanda-cards-card-mini">
+                                        <img src="./img/komanda/card-mini-bg4.svg" alt="" class="komanda-card-mini-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="komanda-cards-card">
+                                <div class="komanda-card-main">
+                                    <h6 class="komanda-card-main-title color-black">Senior DBA</h6>
+                                    <p class="komanda-card-main-text">Опыт: 5 лет</p>
+                                </div>
+                                <div class="komanda-cards-cards">
+                                    <div class="komanda-cards-card-mini">
+                                        <img src="./img/komanda/card-mini-bg3.svg" alt="" class="komanda-card-mini-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="komanda-cards-col2">
+                            <div class="komanda-cards-card">
+                                <div class="komanda-card-main">
+                                    <h6 class="komanda-card-main-title color-black">Senior DevOps</h6>
+                                    <p class="komanda-card-main-text">Опыт: 6 лет</p>
+                                </div>
+                                <div class="komanda-cards-cards">
+                                    <div class="komanda-cards-card-mini">
+                                        <img src="./img/komanda/card-mini-bg1.svg" alt="" class="komanda-card-mini-img">
+                                    </div>
+                                    <div class="komanda-cards-card-mini">
+                                        <img src="./img/komanda/card-mini-bg4.svg" alt="" class="komanda-card-mini-img">
+                                    </div>
+                                    <div class="komanda-cards-card-mini">
+                                        <img src="./img/komanda/card-mini-bg5.svg" alt="" class="komanda-card-mini-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="komanda-cards-card">
+                                <div class="komanda-card-main">
+                                    <h6 class="komanda-card-main-title color-gray">Middle DevOps</h6>
+                                    <p class="komanda-card-main-text ">Опыт:4 года</p>
+                                </div>
+                                <div class="komanda-cards-cards">
+                                    <div class="komanda-cards-card-min" hidden>
+                                        <img src="./img/komanda/card-mini-bg.svg" alt="" class="komanda-card-mini-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="komanda-cards-card">
+                                <div class="komanda-card-main">
+                                    <h6 class="komanda-card-main-title color-gray">Middle DevOps</h6>
+                                    <p class="komanda-card-main-text">Опыт: 5 лет</p>
+                                </div>
+                                <div class="komanda-cards-cards">
+                                    <div class="komanda-cards-card-mini">
+                                        <img src="./img/komanda/card-mini-bg1.svg" alt="" class="komanda-card-mini-img">
+                                    </div>
+                                    <div class="komanda-cards-card-mini">
+                                        <img src="./img/komanda/card-mini-bg2.svg" alt="" class="komanda-card-mini-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="komanda-cards-card">
+                                <div class="komanda-card-main">
+                                    <h6 class="komanda-card-main-title color-gray">Linux Administrator</h6>
+                                    <p class="komanda-card-main-text">Опыт:4 года</p>
+                                </div>
+                                <div class="komanda-cards-cards">
+                                    <div class="komanda-cards-card-mini">
+                                        <img src="./img/komanda/card-mini-bg4.svg" alt="" class="komanda-card-mini-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="komanda-cards-card">
+                                <div class="komanda-card-main">
+                                    <h6 class="komanda-card-main-title color-gray">Technical Writer</h6>
+                                    <p class="komanda-card-main-text">Опыт: 4 года</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="komanda-text"><span style="color: #D84F54;">*</span>Пример конкретной команды для проекта.
+                        Cостав подбираем индивидуально</p>
+                </div>
+                <div class="komanda-profesi">
+                    <h5 class="komanda-profesi-title">Мы — профессионалы</h5>
+                    <div class="komanda-profesi-cards">
+                        <div class="komanda-profesi-card">
+                            <img src="./img/komanda/card-mini-bg6.svg" alt="" style="width: 44px;">
+                        </div>
+                        <div class="komanda-profesi-card">
+                            <img src="./img/komanda/card-mini-bg5.svg" alt="" style="width: 56px;">
+                        </div>
+                        <div class="komanda-profesi-card">
+                            <img src="./img/komanda/card-mini-bg2.svg" alt="" style="width: 63px;">
+                        </div>
+                        <div class="komanda-profesi-card">
+                            <img src="./img/komanda/card-mini-bg1.svg" alt="" style="width: 60px;">
+                        </div>
+                        <div class="komanda-profesi-card">
+                            <img src="./img/komanda/card-mini-bg4.svg" alt="" style="width: 56px;">
+                        </div>
+                        <div class="komanda-profesi-card">
+                            <img src="./img/komanda/card-mini-bg6.svg" alt="" style="width: 44px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section hidden class="data">
+        <div class="data-container ">
+            <p class="data-text">В <span class="data-text-variable">Fevlake</span> мы проектируем и обслуживаем
+                IT-инфраструктуры любой сложности и
+                работаем с базами данных</p>
+            <ul class="data-list">
+                <li class="data-item"><button class="data-btn active">>> Data Platform</button></li>
+                <li class="data-item"><button class="data-btn">>> Infrastructure</button></li>
+                <li class="data-item"><button class="data-btn">>> Yandex.cloud</button></li>
+                <li class="data-item"><button class="data-btn delete">>> DevSecOps</button></li>
+
+            </ul>
+            <div class="swipperbox swiper mySwiper">
+                <div class="swipper swiper-wrapper">
+                    <div class="data-box active swiper-slide">
+                        <h1 class="data-box-title">Data Platform</h1>
+                        <p class="data-box-text">Ускоряем работу приложений с данными, помогаем снизить стоимость
+                            владения и
+                            выполнить требования регулятора за счёт глубокой оптимизации дата-инфраструктуры,
+                            конфигурации
+                            СУБД, архитектуры DWH</p>
+                        <ul class="data-box-list">
+                            <li class="data-box-item">>> Миграция</li>
+                            <li class="data-box-item">>> Проектирование</li>
+                            <li class="data-box-item">>> Мониторинг</li>
+                            <li class="data-box-item">>> Kubernetes</li>
+                            <li class="data-box-item">>> CI/CD</li>
+                            <li class="data-box-item">>> ClickHouse</li>
+                        </ul>
+
+
+                    </div>
+                    <div class="data-box swiper-slide">
+                        <h1 class="data-box-title">Infrastructure</h1>
+                        <p class="data-box-text">Строим высокопроизводительные современные инфраструктуры
+                            веб-приложений,
+                            индивидуально оптимизированные для каждого заказчика по задачам, надёжности и стоимости,
+                            выполняем
+                            сложные миграци</p>
+                        <ul class="data-box-list">
+                            <li class="data-box-item">>> Миграция</li>
+                            <li class="data-box-item">>> Проектирование</li>
+                            <li class="data-box-item">>> Мониторинг</li>
+                            <li class="data-box-item">>> Kubernetes</li>
+                            <li class="data-box-item">>> CI/CD</li>
+                            <li class="data-box-item">>> ClickHouse</li>
+                        </ul>
+
+                    </div>
+                    <div class="data-box swiper-slide">
+                        <h1 class="data-box-title">Yandex.Cloud</h1>
+                        <p class="data-box-text active">Одни из первых стали ключевыми партнерами Yandex.Cloud и
+                            помогаем
+                            бизнесу быстро и <br> безопасно перевести и поддерживать инфраструктуру в облаке</p>
+                        <ul class="data-box-list">
+                            <li class="data-box-item">>> Миграция</li>
+                            <li class="data-box-item">>> Проектирование</li>
+                            <li class="data-box-item">>> Мониторинг</li>
+                            <li class="data-box-item">>> Kubernetes</li>
+                            <li class="data-box-item">>> CI/CD</li>
+                            <li class="data-box-item">>> ClickHouse</li>
+                        </ul>
+
+                    </div>
+                    <div class="data-box swiper-slide">
+                        <h1 class="data-box-title">DevSecOps</h1>
+                        <p class="data-box-text active">Адаптируем и внедряем современные технологии и практики
+                            безопасной
+                            разработки,
+                            доставки и эксплуатации приложений с учетом конкретного ИТ-ландшафта</p>
+                        <ul class="data-box-list">
+                            <li class="data-box-item">>> Миграция</li>
+                            <li class="data-box-item">>> Проектирование</li>
+                            <li class="data-box-item">>> Мониторинг</li>
+                            <li class="data-box-item">>> Kubernetes</li>
+                            <li class="data-box-item">>> CI/CD</li>
+                            <li class="data-box-item">>> ClickHouse</li>
+                        </ul>
+
+                    </div>
+                </div>
+                <button class="data-cursor-left swiper-button-next"></button>
+                <button class="data-cursor-right swiper-button-prev "></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="rebrain">
+        <div class="rebrain-container">
+            <div class="rebrain-box">
+                <div class="rebrain-row">
+                    <h1 class="rebrain-title">Rebrain</h1>
+                    <ul class="rebrain-list">
+                        <li class="rebrain-item"> <img class="rebrain-item-img" src="./img/rebrain/icon.svg" alt="">
+                            <p class="rebrain-item-text">Развиваем индустрию
+                                ИТ-инфраструктуры в России и за рубежом: проводим онлайн-практикумы и воркшопы для
+                                инженеров</p>
+                        </li>
+                        <li class="rebrain-item2"> <img class="rebrain-item-img-2" src="./img/rebrain/icon.svg" alt="">
+                            <p class="rebrain-item-text2"> С нами уже более <span class="rebrain-icon-span">40 000
+                                </span>инженеров, присоединяйтесь!</p>
+                        </li>
+                    </ul>
+                    <ul class="rebrain-list-2">
+                        <li class="rebrain-item"><a href="#" class="rebrain-link-1"><span class="rebrain-span">>></span>
+                                Telegram</a></li>
+                        <li class="rebrain-item"><a href="#" class="rebrain-link-2"><span class="rebrain-span">>></span>
+                                Сайт</a></li>
+                        <li class="rebrain-item"><a href="#" class="rebrain-link-3"><span class="rebrain-span">>></span>
+                                YouTube</a></li>
+                    </ul>
+
+                </div>
+                <div class="rebrain-col">
+                    <div class="rebrain-col-img-link"><video class="rebrain-video" src="./video/XwCad_n5HLY.mp4"
+                            controls></video></div>
+                    <p class=" rebrain-col-text">C <span class="rebrain-col-span">2018</span> года мы развиваем
+                        сообщество инженеров по всему миру и помогаем всем желающим стать профессионалами</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="events">
+        <div class="eventsConatiner">
+            <h2 class="eventsTitle">События Fevlake</h2>
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="eventsCard">
+                            <h3 class="eventsCardTitle">Devops: мониторинг приложений в k8s — как это бывает</h3>
+                            <p class="eventAuthor">Александр Крылов</p>
+                            <p class="eventDescription">Lead DevOps, опыт более 5 лет</p>
+                            <p class="eventsCardBottomText">5 января 2023, вторник, 19:00 по Мск</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="eventsCard">
+                            <h3 class="eventsCardTitle">Devops: мониторинг приложений в k8s — как это бывает</h3>
+                            <p class="eventAuthor">Александр Крылов</p>
+                            <p class="eventDescription">Lead DevOps, опыт более 5 лет</p>
+                            <p class="eventsCardBottomText">5 января 2023, вторник, 19:00 по Мск</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="eventsCard">
+                            <h3 class="eventsCardTitle">Devops: мониторинг приложений в k8s — как это бывает</h3>
+                            <p class="eventAuthor">Александр Крылов</p>
+                            <p class="eventDescription">Lead DevOps, опыт более 5 лет</p>
+                            <p class="eventsCardBottomText">5 января 2023, вторник, 19:00 по Мск</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="eventsCard">
+                            <h3 class="eventsCardTitle">Devops: мониторинг приложений в k8s — как это бывает</h3>
+                            <p class="eventAuthor">Александр Крылов</p>
+                            <p class="eventDescription">Lead DevOps, опыт более 5 лет</p>
+                            <p class="eventsCardBottomText">5 января 2023, вторник, 19:00 по Мск</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="eventsCard">
+                            <h3 class="eventsCardTitle">Devops: мониторинг приложений в k8s — как это бывает</h3>
+                            <p class="eventAuthor">Александр Крылов</p>
+                            <p class="eventDescription">Lead DevOps, опыт более 5 лет</p>
+                            <p class="eventsCardBottomText">5 января 2023, вторник, 19:00 по Мск</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="eventsCard">
+                            <h3 class="eventsCardTitle">Devops: мониторинг приложений в k8s — как это бывает</h3>
+                            <p class="eventAuthor">Александр Крылов</p>
+                            <p class="eventDescription">Lead DevOps, опыт более 5 лет</p>
+                            <p class="eventsCardBottomText">5 января 2023, вторник, 19:00 по Мск</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="eventSwiperBtn eventSwiperBtnLeft swiper-button-prev2"></button>
+            <button class="eventSwiperBtn eventSwiperBtnRight swiper-button-next2"></button>
+        </div>
+    </section>
+
+    <section class="blog">
+        <div class="blogContainer">
+            <div class="blogArrow">
+                <svg width="434" height="152" viewBox="0 0 434 152" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M113.84 104.12V62.68L74.36 97.96H73.24V0.799994H41.04V97.96H39.92L0.16 62.68V104.12L57 152L113.84 104.12ZM273.495 104.12V62.68L234.015 97.96H232.895V0.799994H200.695V97.96H199.575L159.815 62.68V104.12L216.655 152L273.495 104.12ZM433.149 104.12V62.68L393.669 97.96H392.549V0.799994H360.349V97.96H359.229L319.469 62.68V104.12L376.309 152L433.149 104.12Z"
+                        fill="#F8F7F7" />
+                </svg>
+            </div>
+            <div class="blogTop">
+                <h2 class="blogTitle">Наши блоги и публикации </h2>
+                <div class="blogTopCardBox">
+                    <a href="#" class="blogTopCard">
+                        <p class="blogTopCardText">Telegram</p>
+                    </a>
+                    <a href="#" class="blogTopCard">
+                        <p class="blogTopCardText">Хабр</p>
+                    </a>
+                    <a href="#" class="blogTopCard">
+                        <p class="blogTopCardText">Vc.ru</p>
+                    </a>
+                    <a href="#" class="blogTopCard">
+                        <p class="blogTopCardText">YouTube</p>
+                    </a>
+                </div>
+            </div>
+            <div class="blogBottom">
+                <h3 class="blogBottomtitle">Выступаем на эвентах и <br> организовываем собственные </h3>
+                <div class="blogBottomCardBox">
+                    <a href="#" class="blogBottomCard">
+                        <p class="bottomCardText">Root Conf</p>
+                    </a>
+                    <a href="#" class="blogBottomCard">
+                        <p class="bottomCardText">DevOps <br> Conf</p>
+                    </a>
+                    <a href="#" class="blogBottomCard">
+                        <p class="bottomCardText">DevOps by <br> Rebrain</p>
+                    </a>
+                    <a href="#" class="blogBottomCard">
+                        <p class="bottomCardText">Yandex</p>
+                    </a>
+                    <a href="#" class="blogBottomCard">
+                        <p class="bottomCardText">Data <br> Platform</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-row">
+                <ul class="footer-list">
+                    <li class="footer-item">
+                        <h3 class="footer-link-title">Социальные сети</h3>
+                    </li>
+                    <li class="footer-item"><a href="#" class="footer-link">Telegram</a></li>
+                    <li class="footer-item"><a href="#" class="footer-link">VK</a></li>
+                    <li class="footer-item"><a href="#" class="footer-link">Habr</a></li>
+                    <li class="footer-item"><a href="#" class="footer-link">YouTube</a></li>
+                </ul>
+                <ul class="footer-list-2">
+                    <li class="footer-item">
+                        <h3 class="footer-link-title">Направления работы</h3>
+                    </li>
+                    <li class="footer-item"><a href="#" class="footer-link">Архитектура и проектирование</a></li>
+                    <li class="footer-item"><a href="#" class="footer-link">Эффективная доставка приложений (DevOps)</a>
+                    </li>
+                    <li class="footer-item"><a href="#" class="footer-link">SRE</a></li>
+                    <li class="footer-item"><a href="#" class="footer-link">Данные</a></li>
+                    <li class="footer-item"><a href="#" class="footer-link">ML</a></li>
+                    <li class="footer-item"><a href="#" class="footer-link">Развёртывание и поддержка приложений</a>
+                    </li>
+                    <li class="footer-item"><a href="#" class="footer-link">Развитие и оптимизация инфраструктуры</a>
+                    </li>
+                </ul>
+            </div>
+            <hr class="footer-line">
+            <div class="footer-row-2">
+                <div class="footer-appeal">
+                    <div class="footer-appeal-box">
+                        <a href="#" class="footer-appeal-email">info@fevlake.com</a>
+                        <a href="#" class="footer-appeal-number">+7 (495) 123 45 67</a>
+                    </div>
+                    <ul class="footer-bottom-list">
+                        <li class="footer-bottom-item"><a href="#" class="footer-bottom-link">Политика
+                                конфиденциальности</a></li>
+                        <li class="footer-bottom-item"><a href="#" class="footer-bottom-link">Публичная оферта</a></li>
+                        <li class="footer-bottom-item"><a href="#" class="footer-bottom-link">Пользовательское
+                                соглашение</a></li>
+                        <li class="footer-bottom-item"><a href="#" class="footer-bottom-link">Согласие на обработку
+                                персональных данных</a></li>
+                        <li class="footer-bottom-item"><a href="#" class="footer-bottom-link">Согласие на получение
+                                рекламных материалов</a></li>
+                    </ul>
+                </div>
+                <div class="footer-appeal-2">
+                    <a href="#" class="footer-appeal-2-link">ООО «ФевЛейк»</a>
+                    <div class="footer-appeal-2-box">
+                        <p class="footer-appeal-2-text">ИНН 7733243649 ОГРН 1157746702365</p>
+                        <p class="footer-appeal-2-text-2">Юридический адрес: 125362, г. Москва, <br> ул. Свободы, д. 17,
+                            этаж -
+                            подвал, пом. I, комн. 3, офис 1</p>
+
+                    </div>
+                </div>
+                <p class="years">2024</p>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '">' + (index + 1) + "</span>";
+                },
+            },
+            navigation: {
+                nextEl: ".swiper-button-next1",
+                prevEl: ".swiper-button-prev1",
+            },
+        });
+
+        var swiper2 = new Swiper(".mySwiper2", {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: ".swiper-button-next2",
+                prevEl: ".swiper-button-prev2",
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1.1,
+                    spaceBetween: 20,
+                },
+                600: {
+                    slidesPerView: 1.7,
+                    spaceBetween: 20,
+                },
+                864: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1240: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+            },
+        });
+    </script>
+
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
