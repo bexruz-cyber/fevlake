@@ -43,20 +43,20 @@
 
 
         .swiper-pagination-bullet {
-      width: 20px;
-      height: 20px;
-      text-align: center;
-      line-height: 20px;
-      font-size: 12px;
-      color: #000;
-      opacity: 1;
-      background: rgba(0, 0, 0, 0.2);
-    }
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+            font-size: 12px;
+            color: #000;
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.2);
+        }
 
-    .swiper-pagination-bullet-active {
-      color: #fff;
-      background: #007aff;
-    }
+        .swiper-pagination-bullet-active {
+            color: #fff;
+            background: #007aff;
+        }
     </style>
     <!-- font end -->
 
@@ -83,7 +83,7 @@
                         <ul class="hamburger-list">
                             <li class="hamburger-item"><a href="" class="hoverMain hamburger-link">» Проекты и кейсы</a>
                             </li>
-                            <li class="hamburger-item"><a href="" class="hoverMain hamburger-link">» Услуги</a></li>
+                            <li class="hamburger-item"><a href="./Service.html" class="hoverMain hamburger-link">» Услуги</a></li>
                             <li class="hamburger-item"><a href="" class="hoverMain hamburger-link">» Стать клиентом</a>
                             </li>
                             <li class="hamburger-item"><a href="" class="hamburger-link">» <span>Проекты и
@@ -96,7 +96,7 @@
                     </div>
                     <ul class="nav-list">
                         <li class="nav-item"><a href="#" class="hoverMain nav-link">» Проекты и кейсы</a></li>
-                        <li class="nav-item"><a href="#" class="hoverMain nav-link">» Услуги</a></li>
+                        <li class="nav-item"><a href="./Service.html" class="hoverMain nav-link">» Услуги</a></li>
                         <li class="nav-item"><a href="#" class="hoverMain nav-link">» Стать клиентом</a></li>
                     </ul>
                 </nav>
@@ -136,10 +136,11 @@
                 <button class="platformSwoperBtn platformSwoperBtnRight swiper-button-next1"></button>
                 <div class="swiper mySwiper">
                     <div class="platformPaginationBox md_hidden">
-                        <button class="platformPaginationBtn platformPaginationBtnActive">DataPlatform</button>
-                        <button class="platformPaginationBtn">Infrastructure</button>
-                        <button class="platformPaginationBtn">Yandex.cloud</button>
-                        <button class="platformPaginationBtn lg_hidden">DevSecOps</button>
+                        <button
+                            class="platformPaginationBtn platformPaginationBtn-1 platformPaginationBtnActive">DataPlatform</button>
+                        <button class="platformPaginationBtn platformPaginationBtn-2 ">Infrastructure</button>
+                        <button class="platformPaginationBtn platformPaginationBtn-3 ">Yandex.cloud</button>
+                        <button class="platformPaginationBtn platformPaginationBtn-4 lg_hidden">DevSecOps</button>
                     </div>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -801,55 +802,6 @@
     <!-- swiper start -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- swiper end -->
-
-    <!-- script start -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-                renderBullet: function (index, className) {
-                    return '<span class="' + className + '">' + (index + 1) + "</span>";
-                },
-            },
-            navigation: {
-                nextEl: ".swiper-button-next1",
-                prevEl: ".swiper-button-prev1",
-            },
-        });
-
-        var swiper2 = new Swiper(".mySwiper2", {
-            slidesPerView: 3,
-            spaceBetween: 20,
-            navigation: {
-                nextEl: ".swiper-button-next2",
-                prevEl: ".swiper-button-prev2",
-            },
-            breakpoints: {
-                320: {
-                    slidesPerView: 1.1,
-                    spaceBetween: 20,
-                },
-                600: {
-                    slidesPerView: 1.7,
-                    spaceBetween: 20,
-                },
-                864: {
-                    slidesPerView: 2,
-                    spaceBetween: 40,
-                },
-                1240: {
-                    slidesPerView: 3,
-                    spaceBetween: 20,
-                },
-            },
-        });
-    </script>
-    <!-- script end -->
-
-
     <script src="./js/app.js"></script>
 </body>
 
