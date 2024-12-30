@@ -81,10 +81,10 @@
                             </button>
                         </div>
                         <ul class="hamburger-list">
-                            <li class="hamburger-item"><a href="" class="hoverMain hamburger-link">» Проекты и кейсы</a>
+                            <li class="hamburger-item"><a href="" class="hoverMain hamburger-link">» <span>Проекты и кейсы</span></a>
                             </li>
-                            <li class="hamburger-item"><a href="./Service.html" class="hoverMain hamburger-link">» Услуги</a></li>
-                            <li class="hamburger-item"><a href="" class="hoverMain hamburger-link">» Стать клиентом</a>
+                            <li class="hamburger-item"><a href="./Service.html" class="hoverMain hamburger-link">» <span>Услуги</span></a></li>
+                            <li class="hamburger-item"><a href="" class="hoverMain hamburger-link">» <span>Стать клиентом</span></a>
                             </li>
                             <li class="hamburger-item"><a href="" class="hamburger-link">» <span>Проекты и
                                         кейсы</span></a></li>
@@ -231,6 +231,36 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            // Tugmalarni pagination sifatida ishlatish
+            var buttons = document.querySelectorAll(".platformPaginationBtn");
+            var swiper = new Swiper(".mySwiper", {
+              navigation: {
+                nextEl: ".swiper-button-next1",
+                prevEl: ".swiper-button-prev1",
+              },
+              on: {
+                slideChange: function () {
+                  // Aktiv tugmani yangilash
+                  buttons.forEach((button, index) => {
+                    if (index === swiper.activeIndex) {
+                      button.classList.add("platformPaginationBtnActive");
+                    } else {
+                      button.classList.remove("platformPaginationBtnActive");
+                    }
+                  });
+                },
+              },
+            });
+          
+            // Tugmalarni bosganda slayderni o'zgartirish
+            buttons.forEach((button, index) => {
+              button.addEventListener("click", () => {
+                swiper.slideTo(index); // Index bo'yicha slaydga o'tish
+              });
+            });
+          </script>
     </section>
     <!-- platform end -->
 

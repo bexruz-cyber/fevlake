@@ -190,6 +190,11 @@ body {
     background-color: transparent;
     border-style: none;
 }
+.exit-btn:hover {
+    background-color: transparent;
+    border-style: none;
+    opacity: .7;
+}
 
 .hamburger-list {
     text-align: left;
@@ -201,7 +206,7 @@ body {
 }
 
 .hamburger-item {
-    max-width: 250px;
+    max-width: 350px;
     width: 100%;
     text-align: left;
     margin-right: auto;
@@ -216,6 +221,12 @@ body {
     font-weight: 800;
     line-height: 20.8px;
     text-align: left;
+    display: flex;
+    gap: 5px;
+    transition: all .3s;
+}
+.hamburger-link:hover{
+    gap: 15px;
 }
 
 @media(max-width:1260px) {
