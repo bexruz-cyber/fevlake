@@ -743,17 +743,18 @@
     font-weight: 400;
     line-height: 20.8px;
     text-align: left;
-    text-underline-position: from-font;
     text-decoration: none;
     color: #F8F7F7;
+}
 
-
+.footer-link{
+    font-family: sans-serif;
 }
 
 .footer-link-title {
     color: #F3585B;
     margin-bottom: 10px;
-
+    font-family: sans-serif;
 }
 
 .footer-row-2 {
@@ -837,7 +838,6 @@
 }
 
 .footer-bottom-link {
-
     font-family: 'pp-regular', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -847,7 +847,10 @@
     text-decoration-skip-ink: none;
     color: #F8F7F7;
     text-decoration: none;
+}
 
+.footer-bottom-link:hover{
+    opacity: .8;
 }
 
 .footer-appeal-2 {

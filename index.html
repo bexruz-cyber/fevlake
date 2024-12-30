@@ -232,35 +232,7 @@
             </div>
         </div>
 
-        <script>
-            // Tugmalarni pagination sifatida ishlatish
-            var buttons = document.querySelectorAll(".platformPaginationBtn");
-            var swiper = new Swiper(".mySwiper", {
-              navigation: {
-                nextEl: ".swiper-button-next1",
-                prevEl: ".swiper-button-prev1",
-              },
-              on: {
-                slideChange: function () {
-                  // Aktiv tugmani yangilash
-                  buttons.forEach((button, index) => {
-                    if (index === swiper.activeIndex) {
-                      button.classList.add("platformPaginationBtnActive");
-                    } else {
-                      button.classList.remove("platformPaginationBtnActive");
-                    }
-                  });
-                },
-              },
-            });
-          
-            // Tugmalarni bosganda slayderni o'zgartirish
-            buttons.forEach((button, index) => {
-              button.addEventListener("click", () => {
-                swiper.slideTo(index); // Index bo'yicha slaydga o'tish
-              });
-            });
-          </script>
+    
     </section>
     <!-- platform end -->
 
@@ -629,12 +601,9 @@
                         </li>
                     </ul>
                     <ul class="rebrain-list-2">
-                        <li class="rebrain-item"><a href="#" class="rebrain-link-1"><span class="rebrain-span">>></span>
-                                Telegram</a></li>
-                        <li class="rebrain-item"><a href="#" class="rebrain-link-2"><span class="rebrain-span">>></span>
-                                Сайт</a></li>
-                        <li class="rebrain-item"><a href="#" class="rebrain-link-3"><span class="rebrain-span">>></span>
-                                YouTube</a></li>
+                        <li class="rebrain-item"><a href="#" target="_blank" class="rebrain-link-1"><span class="rebrain-span">>></span>Telegram</a></li>
+                        <li class="rebrain-item"><a href="#" target="_blank" class="rebrain-link-2"><span class="rebrain-span">>></span>Сайт</a></li>
+                        <li class="rebrain-item"><a href="#" target="_blank" class="rebrain-link-3"><span class="rebrain-span">>></span>YouTube</a></li>
                     </ul>
                 </div>
                 <!-- </div> -->
@@ -705,8 +674,8 @@
                     </div>
                 </div>
             </div>
-            <button class="eventSwiperBtn eventSwiperBtnLeft swiper-button-prev2"></button>
-            <button class="eventSwiperBtn eventSwiperBtnRight swiper-button-next2"></button>
+            <button style="cursor: pointer;" class="eventSwiperBtn eventSwiperBtnLeft swiper-button-prev2"></button>
+            <button style="cursor: pointer;" class="eventSwiperBtn eventSwiperBtnRight swiper-button-next2"></button>
         </div>
     </section>
     <!-- events end -->
@@ -724,16 +693,16 @@
             <div class="blogTop">
                 <h2 class="blogTitle">Наши блоги и публикации </h2>
                 <div class="blogTopCardBox">
-                    <a href="#" class="blogTopCard">
+                    <a target="_blank" href="#" class="blogTopCard">
                         <p class="blogTopCardText">Telegram</p>
                     </a>
-                    <a href="#" class="blogTopCard">
+                    <a target="_blank" href="#" class="blogTopCard">
                         <p class="blogTopCardText">Хабр</p>
                     </a>
-                    <a href="#" class="blogTopCard">
+                    <a target="_blank" href="#" class="blogTopCard">
                         <p class="blogTopCardText">Vc.ru</p>
                     </a>
-                    <a href="#" class="blogTopCard">
+                    <a target="_blank" href="#" class="blogTopCard">
                         <p class="blogTopCardText">YouTube</p>
                     </a>
                 </div>

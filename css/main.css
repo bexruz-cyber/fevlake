@@ -1482,8 +1482,10 @@ body {
     text-underline-position: from-font;
     text-decoration: none;
     color: #F8F7F7;
+}
 
-
+.footer-link:hover{
+    opacity: 0.8;
 }
 
 .footer-link-title {
