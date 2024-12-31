@@ -114,6 +114,13 @@ priceRow.forEach(function (item, index) {
   });
 });
 
+var swiper3 = new Swiper(".mySwiper4", {
+  navigation: {
+    nextEl: ".swiper-button-next3",
+    prevEl: ".swiper-button-prev3",
+  },
+});
+
 // const submitButton = document.querySelector("#submitButton");
 
 // submitButton.addEventListener("click", () => {
@@ -265,3 +272,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+
+
+const workDropdownBtn = document.querySelector(".workDropdownBtn")
+const workDropdown = document.querySelector(".workDropdown")
+
+workDropdownBtn.addEventListener("click", () => {
+  workDropdown.classList.toggle("show")
+  workDropdownBtn.classList.toggle("mb-0")
+})
