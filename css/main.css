@@ -6241,7 +6241,7 @@ html {
         margin-bottom: 16px;
     }
     .workDropdown{
-        padding-right: 0;
+        padding-right: 10px;
     }
     .workDropdownTitle{
         font-size: 16px;
