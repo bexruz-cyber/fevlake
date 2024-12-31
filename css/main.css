@@ -30,7 +30,7 @@ body {
     font-family: 'PP Object Sans';
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -216,6 +216,7 @@ html{
     background-color: transparent;
     border-style: none;
 }
+
 .exit-btn:hover {
     background-color: transparent;
     border-style: none;
@@ -251,7 +252,8 @@ html{
     gap: 5px;
     transition: all .3s;
 }
-.hamburger-link:hover{
+
+.hamburger-link:hover {
     gap: 15px;
 }
 
@@ -617,7 +619,7 @@ html{
     max-width: 540px;
     margin-left: auto;
     margin-right: auto;
-    transform: translateX(-100px) ;
+    transform: translateX(-100px);
     margin-top: -80px;
 }
 
@@ -1966,9 +1968,9 @@ html{
 
 }
 
-@media(max-width: 600px){
+@media(max-width: 600px) {
 
-    .rebrain-link-1{
+    .rebrain-link-1 {
         max-width: 106px;
         width: 100%;
         padding: 0;
@@ -1978,7 +1980,8 @@ html{
         min-width: 106px;
         min-height: 106px;
     }
-    .rebrain-link-2{
+
+    .rebrain-link-2 {
         max-width: 106px;
         width: 100%;
         padding: 0;
@@ -1988,7 +1991,8 @@ html{
         min-width: 106px;
         min-height: 106px;
     }
-    .rebrain-link-3{
+
+    .rebrain-link-3 {
         max-width: 106px;
         width: 100%;
         padding: 0;
@@ -1998,7 +2002,8 @@ html{
         min-width: 106px;
         min-height: 106px;
     }
-    .rebrain-list-2{
+
+    .rebrain-list-2 {
         gap: 10px;
     }
 }
@@ -2058,9 +2063,10 @@ html{
     overflow: hidden;
     height: 100%;
 }
-.swiper-slide{
+
+.swiper-slide {
     height: 100%;
-    
+
 }
 
 .platformPaginationBox {
@@ -2699,10 +2705,11 @@ html{
 }
 
 @media(max-width: 768px) {
-    .blog{
+    .blog {
         padding-top: 80px;
         padding-bottom: 80px;
     }
+
     .blogBottom {
         max-width: 520px;
         margin-left: auto;
@@ -2758,8 +2765,9 @@ html{
         padding-bottom: 0;
     }
 }
-@media(max-width: 600px){
-    .blog{
+
+@media(max-width: 600px) {
+    .blog {
         padding-top: 50px;
         padding-bottom: 50px;
     }
@@ -2774,14 +2782,17 @@ html{
         grid-row-gap: 10px;
     }
 }
-.hoverMain{
+
+.hoverMain {
     opacity: 1;
     transition: all 0.3;
 }
-.hoverMain:hover{
+
+.hoverMain:hover {
     opacity: 0.7;
 }
-.hamburger_top{
+
+.hamburger_top {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -2920,12 +2931,14 @@ html{
 .br1 {
     display: block;
 }
-.btn123{
+
+.btn123 {
     gap: 10px;
     display: flex;
     flex-wrap: wrap;
 }
-.btn1234{
+
+.btn1234 {
     gap: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -5750,7 +5763,8 @@ html{
     text-align: center;
     margin-bottom: 40px;
 }
-.textarea{
+
+.textarea {
     height: 21px;
 }
 
@@ -5780,7 +5794,8 @@ html{
     border: none;
     background-color: transparent;
     outline: none;
-    resize: none; /* textarea uchun */
+    resize: none;
+    /* textarea uchun */
     overflow: auto;
 }
 
@@ -5838,37 +5853,407 @@ html{
     line-height: 20.8px;
 }
 
-.validLogoName{
+.validLogoName {
     position: absolute;
     top: 12px;
     right: 20px;
     width: 20px;
     height: 20px;
 }
-.invalidLogoName{
+
+.invalidLogoName {
     position: absolute;
     top: 12px;
     right: 20px;
     display: none;
 }
-.btnValid{
+
+.btnValid {
     background-color: #F3585B;
     color: #F8F7F7;
 }
 
-.invalid{
+.invalid {
     border-color: #D84F54;
 }
-.valid{
+
+.valid {
     border-color: #2B2B2B;
 }
 
-@media(max-width: 768px){
-    .modalBox{
+@media(max-width: 768px) {
+    .modalBox {
         padding-left: 20px;
         padding-right: 20px;
     }
 }
+
+
+
+
+
+
+
+.work {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #ECEAEA;
+}
+
+.workContainer {
+    max-width: 1620px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-left: 20px;
+}
+
+.workTitle {
+    font-family: PP Object Sans;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 31.2px;
+    color: #6D6969;
+    max-width: 1450px;
+    width: 100%;
+    margin-left: auto;
+    margin-bottom: 50px;
+}
+
+.workArrow {
+    position: absolute;
+    left: 401px;
+    top: 200px;
+    z-index: 10;
+}
+
+.workCenter {
+    max-width: 1450px;
+    width: 100%;
+    margin-left: auto;
+    display: flex;
+    align-items: start;
+    gap: 40px;
+}
+
+.workLeft {
+    position: relative;
+    z-index: 30;
+    max-width: 520px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding-top: 225px;
+}
+
+.workLeftTitle:nth-child(1) {
+    position: absolute;
+    font-family: PP Object Sans;
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 62.72px;
+    color: #D84F54;
+    width: 1120px;
+}
+
+.workLeftTitle {
+    font-family: PP Object Sans;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 31.2px;
+    color: #6D6969;
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+
+
+.workLeftTitle>span {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.workRight {
+    position: relative;
+    z-index: 10;
+    max-width: 890px;
+    padding-top: 147px;
+}
+
+.workRightWhite {
+    background-color: #F8F7F7;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    padding: 40px 0px 20px 50px;
+    margin-bottom: 50px;
+}
+
+.workBtns {
+    max-width: 146px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 80px;
+    margin-top: -68px;
+}
+
+.workBtn {
+    width: 68px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F8F7F7;
+    border: 1px solid #6D6969;
+}
+
+
+
+.workRightTitle {
+    font-family: PP Object Sans;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 31.2px;
+    color: #363636;
+    margin-bottom: 26px;
+    margin-right: 80px;
+}
+
+.workRightList {
+    min-height: 409px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+    width: 100%;
+    padding-right: 80px;
+}
+
+
+.workRightListItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 625px;
+    position: relative;
+    z-index: 20;
+    font-family: PP Object Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    color: #2B2B2B;
+}
+
+.workRightListItem>a {
+    color: #D84F54;
+    text-decoration: underline;
+}
+
+.workRightListNumber {
+    position: absolute;
+    font-family: PP Object Sans;
+    font-size: 280px;
+    font-weight: 800;
+    line-height: 274.4px;
+    color: #ECEAEA;
+    bottom: -40px;
+    right: 0px;
+}
+
+.workDropdownBtn {
+    font-family: PP Object Sans;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 31.2px;
+    color: #2B2B2B;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    margin-bottom: 30px;
+    background-color: transparent;
+    margin-right: 80px;
+    text-align: left;
+}
+
+.workDropdownBtnArrow {
+    color: #D84F54;
+    transition: all .3s;
+    transform: rotate(90deg);
+}
+
+.workDropdown {
+    max-height: 0px;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-right: 80px;
+    transition: all .3s;
+}
+
+.workDropdownTitleBg {
+    border-radius: 14px;
+    padding: 12px 20px;
+    background-color: #0000001A;
+    backdrop-filter: blur(40px);
+}
+
+.workDropdownTitle {
+    font-family: PP Object Sans;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 19.2px;
+    color: #2B2B2B;
+}
+
+.workDropdowInfoBox {
+    padding: 12px 20px;
+    background-color: #0000001A;
+    backdrop-filter: blur(40px);
+    border-radius: 14px;
+}
+
+.workDropdownList {
+    list-style: none;
+    margin-top: 10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.workDropdownListItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: "PP Object Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+}
+
+.workBottomBtn {
+    padding: 7.5px 30px;
+    background-color: #2B2B2B;
+    font-family: "PP Object Sans";
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 20.8px;
+    color: #F8F7F7;
+    margin-left: 50px;
+}
+
+.workBottomBtn::before {
+    content: ">>";
+    color: #F3585B;
+}
+
+.show{
+    max-height: 3099px;
+}
+
+.mb-0{
+    margin-bottom: 0;
+    transition: all .3s;
+}
+
+
+@media(max-width: 1240px){
+    .workCenter{
+        gap: 16px;
+    }
+    .workRight{
+        max-width: 654px;
+    }
+    .workRightWhite{
+        padding: 40px 0px 20px 40px;
+    }
+    .workRightTitle{
+        margin-right: 50px;
+    }
+    .workDropdown{
+        padding-right: 50px;
+    }
+    .workBtns{
+        margin-right: 40px;
+    }
+}
+@media(max-width: 1024px){
+    .workCenter{
+        flex-direction: column;
+        gap: 0;
+    }
+    .workLeft{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 20px;
+        padding-top: 0;
+        width: 1024px;
+        max-width: 1024px;
+        overflow-x: scroll;
+        padding-bottom: 0;
+    }
+    .workRight{
+        padding-top: 30px;
+    }
+    .workArrow{
+        display: none;
+    }
+    .workLeftTitle:nth-child(1){
+        position: static;
+        font-size: 26px;
+        line-height: 31.2px;
+        width: 487px;
+        top: 0;
+        left: 0;
+    }
+    .workLeftTitle{
+        width: 487px;
+        font-size: 26px;
+        line-height: 31.2px;
+    }
+    .workLeft::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Edge uchun */
+    }
+    .workRight{
+        margin-left: auto;
+        max-width: 650px;
+        width: 100%;
+    }
+    .workRightListNumber{
+        text-wrap: nowrap;
+    }
+}
+
+@media(max-width: 520px){
+    .workRightWhite{
+        padding: 40px 0px 20px 10px;
+    }
+    .workRightList{
+        padding-bottom: 50px;
+    }
+    .workDropdownBtn{
+        margin-bottom: 16px;
+    }
+    .workDropdown{
+        padding-right: 0;
+    }
+    .workDropdownTitle{
+        font-size: 16px;
+    }
+    .workDropdownList{
+        padding: 0;
+        margin-top: 10px;
+    }
+}
+
+
+
 
 
 
