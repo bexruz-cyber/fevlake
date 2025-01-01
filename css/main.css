@@ -850,7 +850,6 @@ html {
     color: #D84F54;
 }
 
-.komanda-img1 {}
 
 .komanda-img2 {
     width: 100%;
@@ -2140,6 +2139,7 @@ html {
     height: auto !important;
     width: auto !important;
     margin: 0 !important;
+    opacity: 1 !important;
 }
 
 .swiper-pagination-bullet-active {
