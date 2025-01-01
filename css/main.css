@@ -2146,7 +2146,8 @@ html {
     background-color: #F3585B4D !important;
     color: #D84F54 !important;
 }
-.swiper-pagination{
+
+.swiper-pagination {
     position: relative !important;
     z-index: 20;
     margin-bottom: -10px;
@@ -2155,6 +2156,7 @@ html {
     display: flex;
     justify-content: center;
 }
+
 .swiper-slide {
     border-radius: 14px !important;
 }
@@ -2288,11 +2290,12 @@ html {
     }
 }
 
-@media(max-wdith: 920px){
-    .swiper-pagination{
+@media(max-wdith: 920px) {
+    .swiper-pagination {
         justify-content: end !important;
     }
-    .platformPaginationBox{
+
+    .platformPaginationBox {
         justify-content: start;
     }
 }
@@ -5676,15 +5679,40 @@ html {
     padding-top: 225px;
 }
 
-.workLeftTitle:nth-child(1) {
-    position: absolute;
-    font-family: PP Object Sans;
-    font-size: 64px;
-    font-weight: 800;
-    line-height: 62.72px;
-    color: #D84F54;
-    width: 1120px;
+.workLeft>.swiper-pagination-bullet {
+    font-family: PP Object Sans !important;
+    font-size: 26px !important;
+    font-weight: 800 !important;
+    line-height: 31.2px !important;
+    color: #6D6969 !important;
+    display: flex !important;
+    align-items: start !important;
+    gap: 20px !important;
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    transition: all .3s !important;
+    backdrop-filter: blur(0px) !important;
+    width: 520px !important;
+    text-wrap: wrap !important;
 }
+
+.workLeft>.swiper-pagination-bullet-active {
+    position: absolute !important;
+    font-family: PP Object Sans !important;
+    font-size: 64px !important;
+    font-weight: 800 !important;
+    line-height: 62.72px !important;
+    color: #D84F54 !important;
+    width: 1120px !important;
+    padding: 0 !important;
+    text-wrap: wrap !important;
+}
+
+.workLeft>.swiper-pagination-bullet>span {
+    font-size: 16px;
+    line-height: 24px;
+}
+
 
 .workLeftTitle {
     font-family: PP Object Sans;
@@ -5951,6 +5979,24 @@ html {
         top: 0;
         left: 0;
     }
+
+    .workLeft>.swiper-pagination-bullet {
+        font-size: 26px !important;
+        position: static;
+        top: 0;
+        left: 0;
+    }
+
+    .workLeft>.swiper-pagination-bullet-active {
+        position: static !important;
+        font-size: 26px !important;
+        line-height: 31.2px !important;
+        width: 487px !important;
+        left: 0 !important;
+        text-wrap: wrap !important;
+        line-height: 31.2px !important;
+    }
+
 
     .workLeftTitle {
         width: 487px;

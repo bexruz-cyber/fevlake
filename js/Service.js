@@ -12,7 +12,6 @@ exit.addEventListener("click", function () {
   body.style.overflowY = "scroll";
 });
 
-
 let btn = document.querySelector(".light");
 let industryCol = document.querySelector(".industryCol");
 let industryColRectagle = document.querySelector(".industryColRectagle");
@@ -42,13 +41,16 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-let swiperpaginationbullet = document.querySelectorAll(".swiper-pagination-bullet") 
+let swiperpaginationbullet = document.querySelectorAll(
+  ".swiper-pagination-bullet"
+);
 const tabFun = () => {
-    swiperpaginationbullet[0].textContent = ">> Безопасность и устойчивость бизнеса"
-    swiperpaginationbullet[1].textContent = ">> Развитие бизнеса" 
-    swiperpaginationbullet[2].textContent = ">> Экспертная поддержка"
-}
-tabFun()
+  swiperpaginationbullet[0].textContent =
+    ">> Безопасность и устойчивость бизнеса";
+  swiperpaginationbullet[1].textContent = ">> Развитие бизнеса";
+  swiperpaginationbullet[2].textContent = ">> Экспертная поддержка";
+};
+tabFun();
 
 var swiper2 = new Swiper(".mySwiper2", {
   pagination: {
@@ -112,10 +114,59 @@ priceRow.forEach(function (item, index) {
 
 var swiper3 = new Swiper(".mySwiper4", {
   navigation: {
-    nextEl: ".swiper-button-next3",
-    prevEl: ".swiper-button-prev3",
+    nextEl: ".swiper-button-next4",
+    prevEl: ".swiper-button-prev4",
+  },
+  pagination: {
+    el: ".swiper-pagination4",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
   },
 });
+
+let swiperpaginationbullet2 = document.querySelectorAll(
+  ".workLeft .swiper-pagination-bullet"
+);
+
+const tabFun2 = () => {
+  swiperpaginationbullet2[0].innerHTML = `
+   <span>01</span>
+   Архитектура и проектирование, максимально учитывающие задачи бизнеса
+  `;
+
+  swiperpaginationbullet2[1].innerHTML = `
+     <span>02</span>
+   Эффективная доставка приложений (DevOps)
+  `;
+
+  swiperpaginationbullet2[2].innerHTML = `
+       <span>03</span>
+   SRE
+  `;
+
+  swiperpaginationbullet2[3].innerHTML = `
+    <span>04</span>
+   Данные
+  `;
+
+  swiperpaginationbullet2[4].innerHTML = `
+     <span>05</span>
+   ML
+  `;
+
+  swiperpaginationbullet2[5].innerHTML = `
+     <span>06</span>
+   Развертывание и поддержка внутренних корпоративных приложений
+  `;
+
+  swiperpaginationbullet2[6].innerHTML = `
+  <span>07</span>
+   Развитие и оптимизация инфраструктуры
+  `;
+};
+tabFun2();
 
 // const submitButton = document.querySelector("#submitButton");
 
@@ -124,16 +175,16 @@ var swiper3 = new Swiper(".mySwiper4", {
 // });
 
 const modal = document.querySelector(".modal");
-const modalOpen = document.querySelectorAll(".modalOpen")
-const modalCloseBg = document.querySelector(".modalCloseBg")
-modalOpen.forEach(function(item){
+const modalOpen = document.querySelectorAll(".modalOpen");
+const modalCloseBg = document.querySelector(".modalCloseBg");
+modalOpen.forEach(function (item) {
   item.addEventListener("click", () => {
     modal.style.display = "block";
-  })
-})
+  });
+});
 modalCloseBg.addEventListener("click", () => {
   modal.style.display = "none";
-})
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   const modal = document.querySelector(".modal");
@@ -269,12 +320,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
-
-const workDropdownBtn = document.querySelector(".workDropdownBtn")
-const workDropdown = document.querySelector(".workDropdown")
+const workDropdownBtn = document.querySelector(".workDropdownBtn");
+const workDropdown = document.querySelector(".workDropdown");
 
 workDropdownBtn.addEventListener("click", () => {
-  workDropdown.classList.toggle("show")
-  workDropdownBtn.classList.toggle("mb-0")
-})
+  workDropdown.classList.toggle("show");
+  workDropdownBtn.classList.toggle("mb-0");
+});
