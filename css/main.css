@@ -2668,6 +2668,7 @@ html {
     background-size: cover;
     background-position: center;
     text-decoration: none;
+    background-color: #363636;
 }
 
 .blogTopCard:nth-child(1) {
