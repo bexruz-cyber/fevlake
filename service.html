@@ -15,7 +15,7 @@
             padding: 7.5px 30px;
         }
 
-        .hamburger-bar{
+        .hamburger-bar {
             z-index: 40;
         }
 
@@ -73,7 +73,8 @@
             color: #F8F7F7;
             text-decoration: none;
         }
-        .hamburger-link{
+
+        .hamburger-link {
             color: #F8F7F7;
 
         }
@@ -86,6 +87,24 @@
                 background-color: transparent;
             }
         }
+
+        .komanda-title {
+            font-family: 'PP Object Sans', sans-serif;
+            font-size: 64px;
+            font-weight: 800;
+            line-height: 62.72px;
+            margin-bottom: 30px;
+            color: #363636;
+            max-width: 305px;
+            margin-right: auto;
+            margin-left: auto;
+            position: relative;
+            z-index: 20;
+            top: 0;
+            left: 0;
+            translate: 0;
+        }
+  
     </style>
 </head>
 
@@ -147,8 +166,7 @@
         <div class="hamburgerBarContainer">
             <div class="hamburger_top">
                 <a href="./index.html" class="hamburger-logo">
-                    <svg class="hamburger-logo-img"  viewBox="0 0 100 30" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <svg class="hamburger-logo-img" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M63.0679 2.60377C61.9431 3.99998 61.0059 5.43395 61.0059 5.77357C61.0059 7.01885 62.2057 6.71695 64.7177 4.86791C67.3798 2.94339 67.8671 2.30187 67.5297 1.35849C67.3798 0.943384 65.8425 0 65.3175 0C65.2427 0 64.2304 1.1698 63.0679 2.60377Z"
                             fill="#D84F54" />
@@ -280,13 +298,15 @@
                     d="M113.84 104.12L57 152L0.16 104.12V62.68L39.92 97.96H41.04V0.799994H73.24V97.96H74.36L113.84 62.68V104.12ZM273.495 104.12L216.655 152L159.815 104.12V62.68L199.575 97.96H200.695V0.799994H232.895V97.96H234.015L273.495 62.68V104.12ZM433.149 104.12L376.309 152L319.469 104.12V62.68L359.229 97.96H360.349V0.799994H392.549V97.96H393.669L433.149 62.68V104.12Z"
                     fill="#F8F7F7" />
             </svg>
-            <div class="platformPaginationBox">
+            <div class="swiper-pagination platformPaginationBox"></div>
+
+            <!-- <div class="platformPaginationBox">
                 <button
                     class="platformPaginationBtn platformPaginationBtnSlide-1 platformPaginationBtnActive ">Безопасность
                     и устойчивость бизнеса</button>
                 <button class="platformPaginationBtn platformPaginationBtnSlide-2">Развитие бизнеса</button>
                 <button class="platformPaginationBtn platformPaginationBtnSlide-3">Экспертная поддержка</button>
-            </div>
+            </div> -->
             <div class="problemCenter">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
@@ -704,204 +724,135 @@
 
     <!-- Team start -->
     <section class="komanda">
-        <img src="./img/komanda/komanda-bg.svg" alt="" class="komanda-img1">
-        <img src="./img/komanda/komanda-bg2.svg" alt="" class="komanda-img2">
-        <img src="./img/komanda/team-image2.svg" alt="" class="komanda-img3">
-        <img src="./img/komanda/team-mobile.svg" alt="" class="komanda-img4">
         <div class="komanda-container">
-            <div class="komanda-top">
-                <h1 class="komanda-title">Команда <span class="komanda-title-span">Fevlake</span></h1>
-                <div class="komanda-information">
-                    <p class="komanda-text1">
-                        С 2012 года мы проектируем IT-инфраструктуры. <br>
-                        В командах работают инженеры только senior- и <br class="komanda-br-md"> middle-уровня, <br
-                            class="komanda-br">
-                        опыт специалистов — минимум 4 года
-                    </p>
-                    <p class="komanda-text2">
-                        Больше всего мы гордимся командой и ее экспертизой. Вы всегда можете обратиться к нам за советом
-                        или аналитикой даже вне проекта. Например, разберемся с долгим временем ответа в NodeJS или
-                        напишем udp-proxy на golang <br> <br>
-                        За 10 лет мы выработали собственные решения во многих областях инфраструктуры, которые помогли
-                        нам реализовать более 200 проектов. Широкий кругозор позволяет нам предлагать эффективные,
-                        проверенные и, самое главное, надежные решения для ваших задач <br> <br>
-                        Так же серьезно мы отбираем заказчиков, с которыми работаем, и... оно того стоит
-                    </p>
-                    <p class="komanda-text3">Илья Федичкин и Василий Озеров, основатели Fevlake</p>
-                </div>
-                <img src="./img/komanda/down-arrow.svg" alt="" class="komanda-down-arrow">
+            <div class="teamLogoContainer">
+                <div class="teamLogoBox"><img src="./img/komanda/icons-2.svg" alt=""></div>
+                <div class="teamLogoBox"><img src="./img/komanda/icons-1.svg" alt=""></div>
             </div>
-            <div class="komanda-bottom">
-                <div class="komanda-proekt">
-                    <div class="komanda-profesi">
-                        <h5 class="komanda-profesi-title">Мы — профессионалы</h5>
-                        <div class="komanda-profesi-cards">
-                            <div class="komanda-profesi-card">
-                                <img src="./img/komanda/card-mini-bg6.svg" alt="" style="width: 44px;">
+            <h1 class="komanda-title">Команда</h1>
+            <p class="komanda-text1">IT-инфраструктуру для ваших приложений построит наша <span
+                    class="komanda-text1-span">собственная инхаус-команда*</span>. Состав: </p>
+            <div class="komanda-proekt">
+                <div class="komanda-proekt-cards">
+                    <div class="komanda-cards-col1">
+                        <div class="komanda-cards-card">
+                            <div class="komanda-card-main">
+                                <h6 class="komanda-card-main-title">Team Lead Architect</h6>
+                                <p class="komanda-card-main-text">Опыт: 8 лет</p>
                             </div>
-                            <div class="komanda-profesi-card">
-                                <img src="./img/komanda/card-mini-bg5.svg" alt="" style="width: 56px;">
-                            </div>
-                            <div class="komanda-profesi-card">
-                                <img src="./img/komanda/card-mini-bg2.svg" alt="" style="width: 63px;">
-                            </div>
-                            <div class="komanda-profesi-card">
-                                <img src="./img/komanda/card-mini-bg1.svg" alt="" style="width: 60px;">
-                            </div>
-                            <div class="komanda-profesi-card">
-                                <img src="./img/komanda/card-mini-bg4.svg" alt="" style="width: 56px;">
-                            </div>
-                            <div class="komanda-profesi-card">
-                                <img src="./img/komanda/card-mini-bg6.svg" alt="" style="width: 44px;">
-                            </div>
-                        </div>
-                    </div>
-                    <h5 class="komanda-proekt-title">Пример команды <span class="komanda-proekt-span">для вашего
-                            проекта</span></h5>
-                    <div class="komanda-proekt-cards">
-                        <div class="komanda-cards-col1">
-                            <div class="komanda-cards-card">
-                                <div class="komanda-card-main">
-                                    <h6 class="komanda-card-main-title">Team Lead Architect</h6>
-                                    <p class="komanda-card-main-text">Опыт: 8 лет</p>
+                            <div class="komanda-cards-cards">
+                                <div class="komanda-cards-card-mini">
+                                    <img src="./img/komanda/card-mini-bg1.svg" alt="" class="komanda-card-mini-img">
                                 </div>
-                                <div class="komanda-cards-cards">
-                                    <div class="komanda-cards-card-mini">
-                                        <img src="./img/komanda/card-mini-bg1.svg" alt="" class="komanda-card-mini-img">
-                                    </div>
-                                    <div class="komanda-cards-card-mini">
-                                        <img src="./img/komanda/card-mini-bg2.svg" alt="" class="komanda-card-mini-img">
-                                    </div>
-                                    <div class="komanda-cards-card-mini">
-                                        <img src="./img/komanda/card-mini-bg3.svg" alt="" class="komanda-card-mini-img">
-                                    </div>
+                                <div class="komanda-cards-card-mini">
+                                    <img src="./img/komanda/card-mini-bg2.svg" alt="" class="komanda-card-mini-img">
                                 </div>
-                            </div>
-                            <div class="komanda-cards-card">
-                                <div class="komanda-card-main">
-                                    <h6 class="komanda-card-main-title">Project Manager</h6>
-                                    <p class="komanda-card-main-text">Опыт:7 лет</p>
-                                </div>
-                                <div class="komanda-cards-cards" hidden>
-                                    <div class="komanda-cards-card-min">
-                                        <img src="./img/komanda/card-mini-bg.svg" alt="" class="komanda-card-mini-img">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="komanda-cards-card">
-                                <div class="komanda-card-main">
-                                    <h6 class="komanda-card-main-title color-black">Senior DevOps</h6>
-                                    <p class="komanda-card-main-text">Опыт: 8 лет</p>
-                                </div>
-                                <div class="komanda-cards-cards">
-                                    <div class="komanda-cards-card-mini">
-                                        <img src="./img/komanda/card-mini-bg1.svg" alt="" class="komanda-card-mini-img">
-                                    </div>
-                                    <div class="komanda-cards-card-mini">
-                                        <img src="./img/komanda/card-mini-bg4.svg" alt="" class="komanda-card-mini-img">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="komanda-cards-card">
-                                <div class="komanda-card-main">
-                                    <h6 class="komanda-card-main-title color-black">Senior DBA</h6>
-                                    <p class="komanda-card-main-text">Опыт: 5 лет</p>
-                                </div>
-                                <div class="komanda-cards-cards">
-                                    <div class="komanda-cards-card-mini">
-                                        <img src="./img/komanda/card-mini-bg3.svg" alt="" class="komanda-card-mini-img">
-                                    </div>
+                                <div class="komanda-cards-card-mini">
+                                    <img src="./img/komanda/card-mini-bg3.svg" alt="" class="komanda-card-mini-img">
                                 </div>
                             </div>
                         </div>
-                        <div class="komanda-cards-col2">
-                            <div class="komanda-cards-card">
-                                <div class="komanda-card-main">
-                                    <h6 class="komanda-card-main-title color-black">Senior DevOps</h6>
-                                    <p class="komanda-card-main-text">Опыт: 6 лет</p>
-                                </div>
-                                <div class="komanda-cards-cards">
-                                    <div class="komanda-cards-card-mini">
-                                        <img src="./img/komanda/card-mini-bg1.svg" alt="" class="komanda-card-mini-img">
-                                    </div>
-                                    <div class="komanda-cards-card-mini">
-                                        <img src="./img/komanda/card-mini-bg4.svg" alt="" class="komanda-card-mini-img">
-                                    </div>
-                                    <div class="komanda-cards-card-mini">
-                                        <img src="./img/komanda/card-mini-bg5.svg" alt="" class="komanda-card-mini-img">
-                                    </div>
+                        <div class="komanda-cards-card">
+                            <div class="komanda-card-main">
+                                <h6 class="komanda-card-main-title">Project Manager</h6>
+                                <p class="komanda-card-main-text">Опыт:7 лет</p>
+                            </div>
+                            <div class="komanda-cards-cards" hidden>
+                                <div class="komanda-cards-card-min">
+                                    <img src="./img/komanda/card-mini-bg.svg" alt="" class="komanda-card-mini-img">
                                 </div>
                             </div>
-                            <div class="komanda-cards-card">
-                                <div class="komanda-card-main">
-                                    <h6 class="komanda-card-main-title color-gray">Middle DevOps</h6>
-                                    <p class="komanda-card-main-text ">Опыт:4 года</p>
+                        </div>
+                        <div class="komanda-cards-card">
+                            <div class="komanda-card-main">
+                                <h6 class="komanda-card-main-title color-black">Senior DevOps</h6>
+                                <p class="komanda-card-main-text">Опыт: 8 лет</p>
+                            </div>
+                            <div class="komanda-cards-cards">
+                                <div class="komanda-cards-card-mini">
+                                    <img src="./img/komanda/card-mini-bg1.svg" alt="" class="komanda-card-mini-img">
                                 </div>
-                                <div class="komanda-cards-cards">
-                                    <div class="komanda-cards-card-min" hidden>
-                                        <img src="./img/komanda/card-mini-bg.svg" alt="" class="komanda-card-mini-img">
-                                    </div>
+                                <div class="komanda-cards-card-mini">
+                                    <img src="./img/komanda/card-mini-bg4.svg" alt="" class="komanda-card-mini-img">
                                 </div>
                             </div>
-                            <div class="komanda-cards-card">
-                                <div class="komanda-card-main">
-                                    <h6 class="komanda-card-main-title color-gray">Middle DevOps</h6>
-                                    <p class="komanda-card-main-text">Опыт: 5 лет</p>
-                                </div>
-                                <div class="komanda-cards-cards">
-                                    <div class="komanda-cards-card-mini">
-                                        <img src="./img/komanda/card-mini-bg1.svg" alt="" class="komanda-card-mini-img">
-                                    </div>
-                                    <div class="komanda-cards-card-mini">
-                                        <img src="./img/komanda/card-mini-bg2.svg" alt="" class="komanda-card-mini-img">
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="komanda-cards-card">
+                            <div class="komanda-card-main">
+                                <h6 class="komanda-card-main-title color-black">Senior DBA</h6>
+                                <p class="komanda-card-main-text">Опыт: 5 лет</p>
                             </div>
-                            <div class="komanda-cards-card">
-                                <div class="komanda-card-main">
-                                    <h6 class="komanda-card-main-title color-gray">Linux Administrator</h6>
-                                    <p class="komanda-card-main-text">Опыт:4 года</p>
-                                </div>
-                                <div class="komanda-cards-cards">
-                                    <div class="komanda-cards-card-mini">
-                                        <img src="./img/komanda/card-mini-bg4.svg" alt="" class="komanda-card-mini-img">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="komanda-cards-card">
-                                <div class="komanda-card-main">
-                                    <h6 class="komanda-card-main-title color-gray">Technical Writer</h6>
-                                    <p class="komanda-card-main-text">Опыт: 4 года</p>
+                            <div class="komanda-cards-cards">
+                                <div class="komanda-cards-card-mini">
+                                    <img src="./img/komanda/card-mini-bg3.svg" alt="" class="komanda-card-mini-img">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <p class="komanda-text"><span style="color: #D84F54;">*</span>Пример конкретной команды для проекта.
-                        Cостав подбираем индивидуально</p>
-                </div>
-                <div class="komanda-profesi">
-                    <h5 class="komanda-profesi-title">Мы — профессионалы</h5>
-                    <div class="komanda-profesi-cards">
-                        <div class="komanda-profesi-card">
-                            <img src="./img/komanda/card-mini-bg6.svg" alt="" style="width: 44px;">
+                    <div class="komanda-cards-col2">
+                        <div class="komanda-cards-card">
+                            <div class="komanda-card-main">
+                                <h6 class="komanda-card-main-title color-black">Senior DevOps</h6>
+                                <p class="komanda-card-main-text">Опыт: 6 лет</p>
+                            </div>
+                            <div class="komanda-cards-cards">
+                                <div class="komanda-cards-card-mini">
+                                    <img src="./img/komanda/card-mini-bg1.svg" alt="" class="komanda-card-mini-img">
+                                </div>
+                                <div class="komanda-cards-card-mini">
+                                    <img src="./img/komanda/card-mini-bg4.svg" alt="" class="komanda-card-mini-img">
+                                </div>
+                                <div class="komanda-cards-card-mini">
+                                    <img src="./img/komanda/card-mini-bg5.svg" alt="" class="komanda-card-mini-img">
+                                </div>
+                            </div>
                         </div>
-                        <div class="komanda-profesi-card">
-                            <img src="./img/komanda/card-mini-bg5.svg" alt="" style="width: 56px;">
+                        <div class="komanda-cards-card">
+                            <div class="komanda-card-main">
+                                <h6 class="komanda-card-main-title color-gray">Middle DevOps</h6>
+                                <p class="komanda-card-main-text ">Опыт:4 года</p>
+                            </div>
+                            <div class="komanda-cards-cards">
+                                <div class="komanda-cards-card-min" hidden>
+                                    <img src="./img/komanda/card-mini-bg.svg" alt="" class="komanda-card-mini-img">
+                                </div>
+                            </div>
                         </div>
-                        <div class="komanda-profesi-card">
-                            <img src="./img/komanda/card-mini-bg2.svg" alt="" style="width: 63px;">
+                        <div class="komanda-cards-card">
+                            <div class="komanda-card-main">
+                                <h6 class="komanda-card-main-title color-gray">Middle DevOps</h6>
+                                <p class="komanda-card-main-text">Опыт: 5 лет</p>
+                            </div>
+                            <div class="komanda-cards-cards">
+                                <div class="komanda-cards-card-mini">
+                                    <img src="./img/komanda/card-mini-bg1.svg" alt="" class="komanda-card-mini-img">
+                                </div>
+                                <div class="komanda-cards-card-mini">
+                                    <img src="./img/komanda/card-mini-bg2.svg" alt="" class="komanda-card-mini-img">
+                                </div>
+                            </div>
                         </div>
-                        <div class="komanda-profesi-card">
-                            <img src="./img/komanda/card-mini-bg1.svg" alt="" style="width: 60px;">
+                        <div class="komanda-cards-card">
+                            <div class="komanda-card-main">
+                                <h6 class="komanda-card-main-title color-gray">Linux Administrator</h6>
+                                <p class="komanda-card-main-text">Опыт:4 года</p>
+                            </div>
+                            <div class="komanda-cards-cards">
+                                <div class="komanda-cards-card-mini">
+                                    <img src="./img/komanda/card-mini-bg4.svg" alt="" class="komanda-card-mini-img">
+                                </div>
+                            </div>
                         </div>
-                        <div class="komanda-profesi-card">
-                            <img src="./img/komanda/card-mini-bg4.svg" alt="" style="width: 56px;">
-                        </div>
-                        <div class="komanda-profesi-card">
-                            <img src="./img/komanda/card-mini-bg6.svg" alt="" style="width: 44px;">
+                        <div class="komanda-cards-card">
+                            <div class="komanda-card-main">
+                                <h6 class="komanda-card-main-title color-gray">Technical Writer</h6>
+                                <p class="komanda-card-main-text">Опыт: 4 года</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <p class="komanda-text"><span style="color: #D84F54;">*</span>Пример конкретной команды для проекта.
+                    Cостав подбираем индивидуально</p>
             </div>
         </div>
     </section>
@@ -2733,7 +2684,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./js/app.js"></script>
     <script src="./js/Service.js"></script>
 </body>
 

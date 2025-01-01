@@ -40,21 +40,28 @@
         }
 
 
-        .swiper-pagination-bullet {
-            width: 20px;
-            height: 20px;
-            text-align: center;
-            line-height: 20px;
-            font-size: 12px;
-            color: #000;
-            opacity: 1;
-            background: rgba(0, 0, 0, 0.2);
+        .swiper {
+            width: 100%;
+            height: 100%;
+            position: static !important;
         }
 
-        .swiper-pagination-bullet-active {
-            color: #fff;
-            background: #007aff;
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
     </style>
     <!-- font end -->
 
@@ -139,13 +146,15 @@
                 <button class="platformSwoperBtn platformSwoperBtnLeft swiper-button-prev1"></button>
                 <button class="platformSwoperBtn platformSwoperBtnRight swiper-button-next1"></button>
                 <div class="swiper mySwiper">
-                    <div class="platformPaginationBox md_hidden">
+                    <div class="swiper-pagination platformPaginationBox"></div>
+                    <!-- <div class="platformPaginationBox ">
                         <button
                             class="platformPaginationBtn platformPaginationBtn-1 platformPaginationBtnActive">DataPlatform</button>
                         <button class="platformPaginationBtn platformPaginationBtn-2 ">Infrastructure</button>
                         <button class="platformPaginationBtn platformPaginationBtn-3 ">Yandex.cloud</button>
                         <button class="platformPaginationBtn platformPaginationBtn-4 lg_hidden">DevSecOps</button>
-                    </div>
+                        
+                    </div> -->
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="platformBottomContent">
@@ -223,7 +232,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-pagination"></div>
+                    
                 </div>
                 <div class="platformSwoperBtnBox">
                     <div class="bntBoxSwiper">
@@ -553,9 +562,8 @@
                 <li class="data-item"><button class="data-btn">>> Infrastructure</button></li>
                 <li class="data-item"><button class="data-btn">>> Yandex.cloud</button></li>
                 <li class="data-item"><button class="data-btn delete">>> DevSecOps</button></li>
-
             </ul>
-            <div class="swipperbox swiper mySwiper">
+            <div class="swipperbox swiper">
                 <div class="swipper swiper-wrapper">
                     <div class="data-box active swiper-slide">
                         <h1 class="data-box-title">Data Platform</h1>
@@ -661,9 +669,8 @@
                 <!-- </div> -->
                 <div class="rebrain-col">
                     <div class="rebrain-col-img-link">
-                        <video class="rebrain-video" src="./video/XwCad_n5HLY.mp4"
-                            controls></video>
-                        </div>
+                        <video class="rebrain-video" src="./video/XwCad_n5HLY.mp4" controls></video>
+                    </div>
                     <p class=" rebrain-col-text">C <span class="rebrain-col-span">2018</span> года мы развиваем
                         сообщество инженеров по всему миру и помогаем всем желающим стать профессионалами</p>
                 </div>

@@ -39,14 +39,12 @@
     font-size: 64px;
     font-weight: 800;
     line-height: 62.72px;
-    text-align: left;
+    text-align: center;
     margin-bottom: 30px;
     color: #363636;
-    max-width: 305px;
-    margin-right: auto;
-    margin-left: auto;
-    position: relative;
-    z-index: 20;
+    position: static;
+    width: 100%;
+
 }
 
 .komanda-text1 {

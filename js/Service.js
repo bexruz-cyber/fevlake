@@ -1,3 +1,7 @@
+
+
+
+
 let btn = document.querySelector(".light");
 let industryCol = document.querySelector(".industryCol");
 let industryColRectagle = document.querySelector(".industryColRectagle");
@@ -18,41 +22,22 @@ var swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next1",
     prevEl: ".swiper-button-prev1",
   },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  },
 });
 
-const tabs = [
-  {
-    element: document.querySelector(".platformPaginationBtnSlide-1"),
-    index: 0,
-  },
-  {
-    element: document.querySelector(".platformPaginationBtnSlide-2"),
-    index: 1,
-  },
-  {
-    element: document.querySelector(".platformPaginationBtnSlide-3"),
-    index: 2,
-  },
-];
-
-// Barcha tablar uchun hodisa qo'shadigan funksiya
-const handleTabClick = (clickedTab, index) => {
-  return (e) => {
-    e.preventDefault();
-    swiper.slideTo(index, 0);
-
-    // Aktiv klasslarni boshqarish
-    tabs.forEach(({ element }) =>
-      element.classList.remove("platformPaginationBtnActive")
-    );
-    clickedTab.classList.add("platformPaginationBtnActive");
-  };
-};
-
-// Har bir tab uchun hodisa tayinlash
-tabs.forEach(({ element, index }) => {
-  element.addEventListener("click", handleTabClick(element, index));
-});
+let swiperpaginationbullet = document.querySelectorAll(".swiper-pagination-bullet") 
+const tabFun = () => {
+    swiperpaginationbullet[0].textContent = ">> Безопасность и устойчивость бизнеса"
+    swiperpaginationbullet[1].textContent = ">> Развитие бизнеса" 
+    swiperpaginationbullet[2].textContent = ">> Экспертная поддержка"
+}
+tabFun()
 
 var swiper2 = new Swiper(".mySwiper2", {
   pagination: {
