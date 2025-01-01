@@ -6517,6 +6517,14 @@ html {
     .years {
         margin-right: auto;
     }
+    .modalTitle{
+        font-size: 26px;
+        line-height: 31.2px;
+    }
+    .modalBox{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 
 /* footer end */
