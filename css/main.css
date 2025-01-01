@@ -27,11 +27,12 @@ button {
 
 body {
     overflow-x: hidden;
-    font-family: 'PP Object Sans';
+    font-family: 'PP Object Sans', sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .header {
