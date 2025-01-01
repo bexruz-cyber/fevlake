@@ -4089,13 +4089,12 @@ html {
     margin-bottom: 50px;
     position: relative;
     overflow: hidden;
-    height: 640px;
-    max-height: 1076px;
+    max-height: 640px;
     transition: all .3s;
 }
 
 .active {
-    height: 1076px;
+    max-height: 1076px;
 }
 
 .industryColRectagle {
@@ -4189,12 +4188,8 @@ html {
 
 
 @media(max-width: 850px) {
-    .industryCol {
-        max-height: none;
-    }
-
     .active {
-        height: auto;
+        max-height: 1200px;
     }
 }
 
@@ -4206,7 +4201,11 @@ html {
 
     .industryCol {
         margin-bottom: 31px;
-        height: 555px;
+        max-height: 555px;
+    }
+
+    .active {
+        max-height: 1100px;
     }
 
     .industryColRectagle {
@@ -5474,6 +5473,8 @@ html {
     position: relative;
     z-index: 9999;
     border-radius: 14px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .modalTitle {
