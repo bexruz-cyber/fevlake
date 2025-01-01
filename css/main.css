@@ -5982,9 +5982,9 @@ html {
 
     .workLeft>.swiper-pagination-bullet {
         font-size: 26px !important;
-        position: static;
-        top: 0;
-        left: 0;
+        position: static !important;
+        top: 0 !important;
+        left: 0 !important;
     }
 
     .workLeft>.swiper-pagination-bullet-active {
