@@ -5619,6 +5619,12 @@ html {
     .modalBox {
         padding: 30px 10px 10px 10px;
     }
+    .modalBtn{
+        margin-top: 133px;
+    }
+    .modalTitle{
+        margin-bottom: 24px;
+    }
 }
 
 
