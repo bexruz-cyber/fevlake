@@ -1,0 +1,350 @@
+
+.komanda {
+    padding-top: 80px;
+    padding-bottom: 24px;
+    background-color: #ECEAEA;
+}
+
+.teamLogoContainer {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    max-width: 1458px;
+    width: 100%;
+    position: absolute;
+    top: 340px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.teamLogoBox {
+    max-width: 680px;
+    width: 100%;
+}
+
+.teamLogoBox>img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.komanda-container {
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.komanda-title {
+    font-family: 'PP Object Sans', sans-serif;
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 62.72px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #363636;
+    position: static;
+    width: 100%;
+
+}
+
+.komanda-text1 {
+    font-family: 'pp-500', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28.6px;
+    text-align: center;
+    color: #363636;
+    max-width: 614px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 20;
+}
+
+.komanda-text1-span {
+    color: #D84F54;
+}
+
+.komanda-proekt {
+    position: relative;
+    z-index: 20;
+}
+
+.komanda-proekt-span {
+    color: #D84F54;
+}
+
+.komanda-text {
+    font-family: 'pp-500', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15.6px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #363636;
+    max-width: 502px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    z-index: 20;
+}
+
+.komanda-br-md {
+    display: none;
+}
+
+.komanda-profesi:first-child {
+    display: none;
+}
+
+.komanda-img3 {
+    display: none;
+}
+
+.komanda-proekt-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 1280px;
+}
+
+.komanda-cards-col1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 12px;
+}
+
+.komanda-cards-col2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 30px;
+    grid-column-gap: 12px;
+}
+
+.komanda-cards-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.komanda-card-main {
+    padding: 20px 36px 97px 35px;
+    background-color: #F8F7F7;
+    max-width: 160px;
+    width: 100%;
+    border: 1px solid #6D6969;
+    margin-bottom: -50px;
+}
+
+.komanda-card-main-title {
+    max-width: 87px;
+    font-family: 'PP Object Sans', sans-serif;
+    font-size: 16px;
+    margin-bottom: 12px;
+    font-weight: 800;
+    line-height: 19.2px;
+    text-align: center;
+    color: #D84F54;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.komanda-card-main-text {
+    width: 40px;
+    font-family: 'pp-500', sans-serif;
+    font-size: 12px;
+    color: #363636;
+    font-weight: 500;
+    line-height: 15.6px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    color: #363636;
+    text-align: center;
+}
+
+.komanda-cards-cards {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    max-width: 188px;
+    margin-right: auto;
+}
+
+.komanda-cards-card-mini {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    background-color: #F8F7F7;
+    border: 1px solid #6D6969;
+    align-items: center;
+}
+
+.komanda-card-mini-img {
+    display: inline-block;
+}
+
+.color-black {
+    color: #363636;
+}
+
+.color-gray {
+    color: #6D6969;
+}
+
+@media (max-width:1140px) {
+    .komanda {
+        background-image: url(../img/komanda/komanda2-bg2.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width:880px) {
+    .komanda {
+        background-image: url(../img/komanda/komanda2-bg3.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .teamLogoContainer {
+        flex-direction: column;
+        gap: 50px;
+        top: 271px;
+    }
+
+    .komanda-cards-card:last-child {
+        margin-bottom: 0px;
+    }
+
+    .komanda-text {
+        margin-top: 60px;
+        font-family: 'pp-500', sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 15.6px;
+        letter-spacing: 0.02em;
+        text-align: left;
+    }
+
+    .komanda-cards-col1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 12px;
+        grid-row-gap: 35px;
+    }
+
+    .komanda-cards-col2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 30px;
+        grid-column-gap: 12px;
+        grid-row-gap: 35px;
+    }
+}
+
+@media (max-width:500px) {
+    .komanda {
+        padding-top: 50px;
+        padding-bottom: 20px;
+        background-image: url(../img/komanda/komanda2-bg4.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .komanda-title {
+        font-family: 'PP Object Sans', sans-serif;
+        font-size: 26px;
+        font-weight: 800;
+        line-height: 31.2px;
+        text-align: left;
+        max-width: 124px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 24px;
+    }
+
+    .komanda-text2 {
+        font-family: 'PP Object Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20.8px;
+        text-align: center;
+        max-width: 330px;
+        margin-bottom: 30px;
+    }
+
+    .komanda-proekt-cards {
+        max-width: 340px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .komanda-text {
+        max-width: 288px;
+        text-align: center;
+    }
+
+    .komanda-cards-col1 {
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 30px;
+        grid-column-gap: 5px;
+        max-width: 374px;
+    }
+
+    .komanda-cards-col2 {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        max-width: 374px;
+    }
+
+    .komanda-cards-card {
+        max-width: 130px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .komanda-card-main {
+        padding: 13px 10px 63px;
+        max-width: 114px;
+        margin-bottom: -35px;
+    }
+
+    .komanda-card-main-title {
+        max-width: 76px;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 10px;
+    }
+
+    .komanda-card-main-text {
+        width: 40px;
+        font-family: 'pp-500', sans-serif;
+        font-size: 11px;
+        color: #363636;
+        font-weight: 500;
+        line-height: 13px;
+    }
+
+    .komanda-cards-card-mini {
+        max-width: 40px;
+        height: 40px;
+        padding: 0;
+    }
+
+    .komanda-card-mini-img {
+        width: 18px;
+    }
+}
+

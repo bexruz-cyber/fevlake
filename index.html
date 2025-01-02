@@ -40,21 +40,28 @@
         }
 
 
-        .swiper-pagination-bullet {
-            width: 20px;
-            height: 20px;
-            text-align: center;
-            line-height: 20px;
-            font-size: 12px;
-            color: #000;
-            opacity: 1;
-            background: rgba(0, 0, 0, 0.2);
+        .swiper {
+            width: 100%;
+            height: 100%;
+            position: static !important;
         }
 
-        .swiper-pagination-bullet-active {
-            color: #fff;
-            background: #007aff;
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
     </style>
     <!-- font end -->
 
@@ -66,32 +73,10 @@
     <header class="header">
         <div class="header-container">
             <div class="header-top">
-                <a href="" class="header-logo"><img src="./img/header/header-logo.svg" alt="" class="header-logo"></a>
+                <a href="" class="header-logo"><img src="./img/header/header-logo.svg" alt="header logo" class="header-logo"></a>
                 <nav class="navbar">
-                    <button class="header-hmgr"><img src="./img/header/hamburger.svg" alt=""></button>
-                    <div class="hamburger-bar">
-                        <div class="hamburger_top">
-                            <a href="" class="hamburger-logo"><img src="./img/header/header-logo.svg" alt=""
-                                    class="hamburger-logo-img"></a>
+                    <button class="header-hmgr"><img src="./img/header/hamburger.svg" alt="hamburger icon"></button>
 
-                            <button class="exit-btn">
-                                <img src="./img/header/exit-img.svg" alt="" class="exit-img">
-                            </button>
-                        </div>
-                        <ul class="hamburger-list">
-                            <li class="hamburger-item"><a href="" class="hoverMain hamburger-link">» <span>Проекты и кейсы</span></a>
-                            </li>
-                            <li class="hamburger-item"><a href="./Service.html" class="hoverMain hamburger-link">» <span>Услуги</span></a></li>
-                            <li class="hamburger-item"><a href="" class="hoverMain hamburger-link">» <span>Стать клиентом</span></a>
-                            </li>
-                            <li class="hamburger-item"><a href="" class="hamburger-link">» <span>Проекты и
-                                        кейсы</span></a></li>
-                            <li class="hamburger-item"><a href="" class="hamburger-link">» <span>Услуги</span></a></li>
-                            <li class="hamburger-item"><a href="" class="hamburger-link">» <span>Стать
-                                        клиентом</span></a></li>
-                        </ul>
-                        <a href="tel:+7 (495) 123 45 67" class="hamburger-bar-phone">+7 (495) 123 45 67</a>
-                    </div>
                     <ul class="nav-list">
                         <li class="nav-item"><a href="#" class="hoverMain nav-link">» Проекты и кейсы</a></li>
                         <li class="nav-item"><a href="./service.html" class="hoverMain nav-link">» Услуги</a></li>
@@ -121,6 +106,34 @@
             </div>
         </div>
     </header>
+
+    <div class="hamburger-bar">
+        <div class="hamburgerBarContainer">
+            <div class="hamburger_top">
+                <a href="" class="hamburger-logo"><img src="./img/header/header-logo.svg" alt="hamburger logo"
+                        class="hamburger-logo-img"></a>
+
+                <button class="exit-btn">
+                    <img src="./img/header/exit-img.svg" alt="close icon" class="exit-img">
+                </button>
+            </div>
+            <ul class="hamburger-list">
+                <li class="hamburger-item"><a href="" class="hoverMain hamburger-link">» <span>Проекты и
+                            кейсы</span></a>
+                </li>
+                <li class="hamburger-item"><a href="./Service.html" class="hoverMain hamburger-link">»
+                        <span>Услуги</span></a></li>
+                <li class="hamburger-item"><a href="" class="hoverMain hamburger-link">» <span>Стать клиентом</span></a>
+                </li>
+                <li class="hamburger-item"><a href="" class="hamburger-link">» <span>Проекты и
+                            кейсы</span></a></li>
+                <li class="hamburger-item"><a href="" class="hamburger-link">» <span>Услуги</span></a></li>
+                <li class="hamburger-item"><a href="" class="hamburger-link">» <span>Стать
+                            клиентом</span></a></li>
+            </ul>
+            <a href="tel:+7 (495) 123 45 67" class="hamburger-bar-phone">+7 (495) 123 45 67</a>
+        </div>
+    </div>
     <!-- header end -->
 
 
@@ -135,13 +148,15 @@
                 <button class="platformSwoperBtn platformSwoperBtnLeft swiper-button-prev1"></button>
                 <button class="platformSwoperBtn platformSwoperBtnRight swiper-button-next1"></button>
                 <div class="swiper mySwiper">
-                    <div class="platformPaginationBox md_hidden">
+                    <div class="swiper-pagination platformPaginationBox"></div>
+                    <!-- <div class="platformPaginationBox ">
                         <button
                             class="platformPaginationBtn platformPaginationBtn-1 platformPaginationBtnActive">DataPlatform</button>
                         <button class="platformPaginationBtn platformPaginationBtn-2 ">Infrastructure</button>
                         <button class="platformPaginationBtn platformPaginationBtn-3 ">Yandex.cloud</button>
                         <button class="platformPaginationBtn platformPaginationBtn-4 lg_hidden">DevSecOps</button>
-                    </div>
+                        
+                    </div> -->
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="platformBottomContent">
@@ -160,8 +175,8 @@
                                     <li class="platformSkilItem">CI/CD</li>
                                     <li class="platformSkilItem">ClickHouse</li>
                                 </ul>
-                                <h3 class="platformTextBg">Data Pla</h3>
                             </div>
+                            <h3 class="platformTextBg">Data Pla</h3>
                         </div>
                         <div class="swiper-slide">
                             <div class="platformBottomContent">
@@ -179,8 +194,8 @@
                                     <li class="platformSkilItem">CI/CD</li>
                                     <li class="platformSkilItem">ClickHouse</li>
                                 </ul>
-                                <h3 class="platformTextBg">Infrastru</h3>
                             </div>
+                            <h3 class="platformTextBg">Infrastru</h3>
                         </div>
                         <div class="swiper-slide">
                             <div class="platformBottomContent">
@@ -197,8 +212,8 @@
                                     <li class="platformSkilItem">CI/CD</li>
                                     <li class="platformSkilItem">ClickHouse</li>
                                 </ul>
-                                <h3 class="platformTextBg">Yandex.</h3>
                             </div>
+                            <h3 class="platformTextBg">Yandex.</h3>
                         </div>
                         <div class="swiper-slide">
                             <div class="platformBottomContent">
@@ -215,11 +230,11 @@
                                     <li class="platformSkilItem">CI/CD</li>
                                     <li class="platformSkilItem">ClickHouse</li>
                                 </ul>
-                                <h3 class="platformTextBg">Data Pla</h3>
                             </div>
+                            <h3 class="platformTextBg">Data Pla</h3>
                         </div>
                     </div>
-                    <div class="swiper-pagination"></div>
+                    
                 </div>
                 <div class="platformSwoperBtnBox">
                     <div class="bntBoxSwiper">
@@ -232,7 +247,7 @@
             </div>
         </div>
 
-    
+
     </section>
     <!-- platform end -->
 
@@ -275,7 +290,7 @@
             <h1 class="yandex-title">Yandex.Cloud & <span class="yandex-title-span"> Fevlake</span></h1>
             <div class="yandex-information">
                 <div class="yandex-profile">
-                    <img src="./img/yandex/yandex-face.png" alt="" class="yandex-glavniy">
+                    <img src="./img/yandex/yandex-face.png" alt="face" class="yandex-glavniy">
                     <div class="yandex-profile-about">
                         <p class="yandex-profile-name">Имя Фамилия</p>
                         <p class="yandex-profile-information">“Цитата автора будет прямо здесь”</p>
@@ -284,34 +299,33 @@
                 <div class="yandex-texts">
                     <div class="yandex-texts-text">
                         <span class="yandex-texts-span">
-                            <img src="" alt="">
                         </span>
                         <p>Вместе с Yandex.Cloud развиваем сообщество инженеров и помогаем переезжать в облака с
                             собственных серверов</p>
                     </div>
                     <div class="yandex-texts-text">
                         <span class="yandex-texts-span">
-                            <img src="./img/yandex/yandex-right-icon.svg" alt="">
+                            <img src="./img/yandex/yandex-right-icon.svg" alt="icon">
                         </span>
                         <p>В <span class="yandex-text-span"> 2018 </span> стали партнерами <br class="yandex-br">
                             Yandex.Cloud</p>
                     </div>
                     <div class="yandex-texts-text">
                         <span class="yandex-texts-span">
-                            <img src="./img/yandex/yandex-right-icon.svg" alt="">
+                            <img src="./img/yandex/yandex-right-icon.svg" alt="icon">
                         </span>
                         <p>В <span class="yandex-text-span"> 2020 </span> запустили YouTube-практикум «Принимаем 10 000
                             ивентов в секунду в Yandex.Cloud», который посетили 6 000 инженеров</p>
                     </div>
                     <div class="yandex-texts-text">
                         <span class="yandex-texts-span">
-                            <img src="./img/yandex/yandex-right-icon.svg" alt="">
+                            <img src="./img/yandex/yandex-right-icon.svg" alt="icon">
                         </span>
                         <p>В <span class="yandex-text-span"> 2021 </span> запустили программу Kubernetes x Yandex.Cloud
                             для партнеров облака</p>
                     </div>
                     <div class="yandex-profile">
-                        <img src="./img/yandex/yandex-face.png" alt="" class="yandex-glavniy">
+                        <img src="./img/yandex/yandex-face.png" alt="face" class="yandex-glavniy">
                         <div class="yandex-profile-about">
                             <p class="yandex-profile-name">Имя Фамилия</p>
                             <p class="yandex-profile-information">“Цитата автора будет прямо здесь”</p>
@@ -335,10 +349,10 @@
 
     <!-- komanda start -->
     <section class="komanda">
-        <img src="./img/komanda/komanda-bg.svg" alt="" class="komanda-img1">
-        <img src="./img/komanda/komanda-bg2.svg" alt="" class="komanda-img2">
-        <img src="./img/komanda/team-image2.svg" alt="" class="komanda-img3">
-        <img src="./img/komanda/team-mobile.svg" alt="" class="komanda-img4">
+        <img src="./img/komanda/komanda-bg.svg" alt="Team" class="komanda-img1">
+        <img src="./img/komanda/komanda-bg2.svg" alt="Team" class="komanda-img2">
+        <img src="./img/komanda/team-image2.svg" alt="Team" class="komanda-img3">
+        <img src="./img/komanda/team-mobile.svg" alt="Team" class="komanda-img4">
         <div class="komanda-container">
             <div class="komanda-top">
                 <h1 class="komanda-title">Команда <span class="komanda-title-span">Fevlake</span></h1>
@@ -360,11 +374,33 @@
                     </p>
                     <p class="komanda-text3">Илья Федичкин и Василий Озеров, основатели Fevlake</p>
                 </div>
-                <img src="./img/komanda/down-arrow.svg" alt="" class="komanda-down-arrow">
+                <img src="./img/komanda/down-arrow.svg" alt="down arrow" class="komanda-down-arrow">
             </div>
             <div class="komanda-bottom">
                 <div class="komanda-proekt">
-
+                    <div class="komanda-profesi">
+                        <h5 class="komanda-profesi-title">Мы — профессионалы</h5>
+                        <div class="komanda-profesi-cards">
+                            <div class="komanda-profesi-card">
+                                <img src="./img/komanda/card-mini-bg6.svg" alt="card bg" style="width: 44px;">
+                            </div>
+                            <div class="komanda-profesi-card">
+                                <img src="./img/komanda/card-mini-bg5.svg" alt="card bg" style="width: 56px;">
+                            </div>
+                            <div class="komanda-profesi-card">
+                                <img src="./img/komanda/card-mini-bg2.svg" alt="card bg" style="width: 63px;">
+                            </div>
+                            <div class="komanda-profesi-card">
+                                <img src="./img/komanda/card-mini-bg1.svg" alt="card bg" style="width: 60px;">
+                            </div>
+                            <div class="komanda-profesi-card">
+                                <img src="./img/komanda/card-mini-bg4.svg" alt="card bg" style="width: 56px;">
+                            </div>
+                            <div class="komanda-profesi-card">
+                                <img src="./img/komanda/card-mini-bg6.svg" alt="card bg" style="width: 44px;">
+                            </div>
+                        </div>
+                    </div>
                     <h5 class="komanda-proekt-title">Пример команды <span class="komanda-proekt-span">для вашего
                             проекта</span></h5>
                     <div class="komanda-proekt-cards">
@@ -376,13 +412,13 @@
                                 </div>
                                 <div class="komanda-cards-cards">
                                     <div class="komanda-cards-card-mini">
-                                        <img src="./img/komanda/card-mini-bg1.svg" alt="" class="komanda-card-mini-img">
+                                        <img src="./img/komanda/card-mini-bg1.svg" alt="card bg" class="komanda-card-mini-img">
                                     </div>
                                     <div class="komanda-cards-card-mini">
-                                        <img src="./img/komanda/card-mini-bg2.svg" alt="" class="komanda-card-mini-img">
+                                        <img src="./img/komanda/card-mini-bg2.svg" alt="card bg" class="komanda-card-mini-img">
                                     </div>
                                     <div class="komanda-cards-card-mini">
-                                        <img src="./img/komanda/card-mini-bg3.svg" alt="" class="komanda-card-mini-img">
+                                        <img src="./img/komanda/card-mini-bg3.svg" alt="card bg" class="komanda-card-mini-img">
                                     </div>
                                 </div>
                             </div>
@@ -393,7 +429,7 @@
                                 </div>
                                 <div class="komanda-cards-cards" hidden>
                                     <div class="komanda-cards-card-min">
-                                        <img src="./img/komanda/card-mini-bg.svg" alt="" class="komanda-card-mini-img">
+                                        <img src="./img/komanda/card-mini-bg.svg" alt="card bg" class="komanda-card-mini-img">
                                     </div>
                                 </div>
                             </div>
@@ -404,10 +440,10 @@
                                 </div>
                                 <div class="komanda-cards-cards">
                                     <div class="komanda-cards-card-mini">
-                                        <img src="./img/komanda/card-mini-bg1.svg" alt="" class="komanda-card-mini-img">
+                                        <img src="./img/komanda/card-mini-bg1.svg" alt="card bg" class="komanda-card-mini-img">
                                     </div>
                                     <div class="komanda-cards-card-mini">
-                                        <img src="./img/komanda/card-mini-bg4.svg" alt="" class="komanda-card-mini-img">
+                                        <img src="./img/komanda/card-mini-bg4.svg" alt="card bg" class="komanda-card-mini-img">
                                     </div>
                                 </div>
                             </div>
@@ -418,7 +454,7 @@
                                 </div>
                                 <div class="komanda-cards-cards">
                                     <div class="komanda-cards-card-mini">
-                                        <img src="./img/komanda/card-mini-bg3.svg" alt="" class="komanda-card-mini-img">
+                                        <img src="./img/komanda/card-mini-bg3.svg" alt="card bg" class="komanda-card-mini-img">
                                     </div>
                                 </div>
                             </div>
@@ -431,13 +467,13 @@
                                 </div>
                                 <div class="komanda-cards-cards">
                                     <div class="komanda-cards-card-mini">
-                                        <img src="./img/komanda/card-mini-bg1.svg" alt="" class="komanda-card-mini-img">
+                                        <img src="./img/komanda/card-mini-bg1.svg" alt="card bg" class="komanda-card-mini-img">
                                     </div>
                                     <div class="komanda-cards-card-mini">
-                                        <img src="./img/komanda/card-mini-bg4.svg" alt="" class="komanda-card-mini-img">
+                                        <img src="./img/komanda/card-mini-bg4.svg" alt="card bg" class="komanda-card-mini-img">
                                     </div>
                                     <div class="komanda-cards-card-mini">
-                                        <img src="./img/komanda/card-mini-bg5.svg" alt="" class="komanda-card-mini-img">
+                                        <img src="./img/komanda/card-mini-bg5.svg" alt="card bg" class="komanda-card-mini-img">
                                     </div>
                                 </div>
                             </div>
@@ -448,7 +484,7 @@
                                 </div>
                                 <div class="komanda-cards-cards">
                                     <div class="komanda-cards-card-min" hidden>
-                                        <img src="./img/komanda/card-mini-bg.svg" alt="" class="komanda-card-mini-img">
+                                        <img src="./img/komanda/card-mini-bg.svg" alt="card bg" class="komanda-card-mini-img">
                                     </div>
                                 </div>
                             </div>
@@ -459,10 +495,10 @@
                                 </div>
                                 <div class="komanda-cards-cards">
                                     <div class="komanda-cards-card-mini">
-                                        <img src="./img/komanda/card-mini-bg1.svg" alt="" class="komanda-card-mini-img">
+                                        <img src="./img/komanda/card-mini-bg1.svg" alt="card bg" class="komanda-card-mini-img">
                                     </div>
                                     <div class="komanda-cards-card-mini">
-                                        <img src="./img/komanda/card-mini-bg2.svg" alt="" class="komanda-card-mini-img">
+                                        <img src="./img/komanda/card-mini-bg2.svg" alt="card bg" class="komanda-card-mini-img">
                                     </div>
                                 </div>
                             </div>
@@ -473,7 +509,7 @@
                                 </div>
                                 <div class="komanda-cards-cards">
                                     <div class="komanda-cards-card-mini">
-                                        <img src="./img/komanda/card-mini-bg4.svg" alt="" class="komanda-card-mini-img">
+                                        <img src="./img/komanda/card-mini-bg4.svg" alt="card bg" class="komanda-card-mini-img">
                                     </div>
                                 </div>
                             </div>
@@ -487,6 +523,29 @@
                     </div>
                     <p class="komanda-text"><span style="color: #D84F54;">*</span>Пример конкретной команды для проекта.
                         Cостав подбираем индивидуально</p>
+                </div>
+                <div class="komanda-profesi">
+                    <h5 class="komanda-profesi-title">Мы — профессионалы</h5>
+                    <div class="komanda-profesi-cards">
+                        <div class="komanda-profesi-card">
+                            <img src="./img/komanda/card-mini-bg6.svg" alt="card bg" style="width: 44px;">
+                        </div>
+                        <div class="komanda-profesi-card">
+                            <img src="./img/komanda/card-mini-bg5.svg" alt="card bg" style="width: 56px;">
+                        </div>
+                        <div class="komanda-profesi-card">
+                            <img src="./img/komanda/card-mini-bg2.svg" alt="card bg" style="width: 63px;">
+                        </div>
+                        <div class="komanda-profesi-card">
+                            <img src="./img/komanda/card-mini-bg1.svg" alt="card bg" style="width: 60px;">
+                        </div>
+                        <div class="komanda-profesi-card">
+                            <img src="./img/komanda/card-mini-bg4.svg" alt="card bg" style="width: 56px;">
+                        </div>
+                        <div class="komanda-profesi-card">
+                            <img src="./img/komanda/card-mini-bg6.svg" alt="card bg" style="width: 44px;">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -504,9 +563,8 @@
                 <li class="data-item"><button class="data-btn">>> Infrastructure</button></li>
                 <li class="data-item"><button class="data-btn">>> Yandex.cloud</button></li>
                 <li class="data-item"><button class="data-btn delete">>> DevSecOps</button></li>
-
             </ul>
-            <div class="swipperbox swiper mySwiper">
+            <div class="swipperbox swiper">
                 <div class="swipper swiper-wrapper">
                     <div class="data-box active swiper-slide">
                         <h1 class="data-box-title">Data Platform</h1>
@@ -590,26 +648,30 @@
                 <div class="rebrain-row">
                     <h1 class="rebrain-title">Rebrain</h1>
                     <ul class="rebrain-list">
-                        <li class="rebrain-item"> <img class="rebrain-item-img" src="./img/rebrain/icon.svg" alt="">
+                        <li class="rebrain-item"> <img class="rebrain-item-img" src="./img/rebrain/icon.svg" alt="rabain icon">
                             <p class="rebrain-item-text">Развиваем индустрию
                                 ИТ-инфраструктуры в России и за рубежом: проводим онлайн-практикумы и воркшопы для
                                 инженеров</p>
                         </li>
-                        <li class="rebrain-item2"> <img class="rebrain-item-img-2" src="./img/rebrain/icon.svg" alt="">
+                        <li class="rebrain-item2"> <img class="rebrain-item-img-2" src="./img/rebrain/icon.svg" alt="icon">
                             <p class="rebrain-item-text2"> С нами уже более <span class="rebrain-icon-span">40 000
                                 </span>инженеров, присоединяйтесь!</p>
                         </li>
                     </ul>
                     <ul class="rebrain-list-2">
-                        <li class="rebrain-item"><a href="#" target="_blank" class="rebrain-link-1"><span class="rebrain-span">>></span>Telegram</a></li>
-                        <li class="rebrain-item"><a href="#" target="_blank" class="rebrain-link-2"><span class="rebrain-span">>></span>Сайт</a></li>
-                        <li class="rebrain-item"><a href="#" target="_blank" class="rebrain-link-3"><span class="rebrain-span">>></span>YouTube</a></li>
+                        <li class="rebrain-item"><a href="#" target="_blank" class="rebrain-link-1"><span
+                                    class="rebrain-span">>></span>Telegram</a></li>
+                        <li class="rebrain-item"><a href="#" target="_blank" class="rebrain-link-2"><span
+                                    class="rebrain-span">>></span>Сайт</a></li>
+                        <li class="rebrain-item"><a href="#" target="_blank" class="rebrain-link-3"><span
+                                    class="rebrain-span">>></span>YouTube</a></li>
                     </ul>
                 </div>
                 <!-- </div> -->
                 <div class="rebrain-col">
-                    <div class="rebrain-col-img-link"><video class="rebrain-video" src="./video/XwCad_n5HLY.mp4"
-                            controls></video></div>
+                    <div class="rebrain-col-img-link">
+                        <video class="rebrain-video" src="./video/XwCad_n5HLY.mp4" controls></video>
+                    </div>
                     <p class=" rebrain-col-text">C <span class="rebrain-col-span">2018</span> года мы развиваем
                         сообщество инженеров по всему миру и помогаем всем желающим стать профессионалами</p>
                 </div>
@@ -739,24 +801,24 @@
                     <li class="footer-item">
                         <h3 class="footer-link-title">Социальные сети</h3>
                     </li>
-                    <li class="footer-item"><a href="#" target="_blank" class="footer-link">Telegram</a></li>
-                    <li class="footer-item"><a href="#" target="_blank" class="footer-link">VK</a></li>
-                    <li class="footer-item"><a href="#" target="_blank" class="footer-link">Habr</a></li>
-                    <li class="footer-item"><a href="#" target="_blank" class="footer-link">YouTube</a></li>
+                    <li class="footer-item"><a href="#" target="_blank" class="footer-link hoverMain">Telegram</a></li>
+                    <li class="footer-item"><a href="#" target="_blank" class="footer-link hoverMain">VK</a></li>
+                    <li class="footer-item"><a href="#" target="_blank" class="footer-link hoverMain">Habr</a></li>
+                    <li class="footer-item"><a href="#" target="_blank" class="footer-link hoverMain">YouTube</a></li>
                 </ul>
                 <ul class="footer-list-2">
                     <li class="footer-item">
                         <h3 class="footer-link-title">Направления работы</h3>
                     </li>
-                    <li class="footer-item"><a href="#" class="footer-link">Архитектура и проектирование</a></li>
-                    <li class="footer-item"><a href="#" class="footer-link">Эффективная доставка приложений (DevOps)</a>
+                    <li class="footer-item"><a href="#" class="footer-link hoverMain">Архитектура и проектирование</a></li>
+                    <li class="footer-item"><a href="#" class="footer-link hoverMain">Эффективная доставка приложений (DevOps)</a>
                     </li>
-                    <li class="footer-item"><a href="#" class="footer-link">SRE</a></li>
-                    <li class="footer-item"><a href="#" class="footer-link">Данные</a></li>
-                    <li class="footer-item"><a href="#" class="footer-link">ML</a></li>
-                    <li class="footer-item"><a href="#" class="footer-link">Развёртывание и поддержка приложений</a>
+                    <li class="footer-item"><a href="#" class="footer-link hoverMain">SRE</a></li>
+                    <li class="footer-item"><a href="#" class="footer-link hoverMain">Данные</a></li>
+                    <li class="footer-item"><a href="#" class="footer-link hoverMain">ML</a></li>
+                    <li class="footer-item"><a href="#" class="footer-link hoverMain">Развёртывание и поддержка приложений</a>
                     </li>
-                    <li class="footer-item"><a href="#" class="footer-link">Развитие и оптимизация инфраструктуры</a>
+                    <li class="footer-item"><a href="#" class="footer-link hoverMain">Развитие и оптимизация инфраструктуры</a>
                     </li>
                 </ul>
             </div>
@@ -764,18 +826,18 @@
             <div class="footer-row-2">
                 <div class="footer-appeal">
                     <div class="footer-appeal-box">
-                        <a href="#" class="footer-appeal-email">info@fevlake.com</a>
-                        <a href="#" class="footer-appeal-number">+7 (495) 123 45 67</a>
+                        <a href="#" class="footer-appeal-email hoverMain">info@fevlake.com</a>
+                        <a href="#" class="footer-appeal-number hoverMain">+7 (495) 123 45 67</a>
                     </div>
                     <ul class="footer-bottom-list">
-                        <li class="footer-bottom-item"><a href="#" class="footer-bottom-link">Политика
+                        <li class="footer-bottom-item"><a href="#" class="footer-bottom-link hoverMain">Политика
                                 конфиденциальности</a></li>
-                        <li class="footer-bottom-item"><a href="#" class="footer-bottom-link">Публичная оферта</a></li>
-                        <li class="footer-bottom-item"><a href="#" class="footer-bottom-link">Пользовательское
+                        <li class="footer-bottom-item"><a href="#" class="footer-bottom-link hoverMain">Публичная оферта</a></li>
+                        <li class="footer-bottom-item"><a href="#" class="footer-bottom-link hoverMain">Пользовательское
                                 соглашение</a></li>
-                        <li class="footer-bottom-item"><a href="#" class="footer-bottom-link">Согласие на обработку
+                        <li class="footer-bottom-item"><a href="#" class="footer-bottom-link hoverMain">Согласие на обработку
                                 персональных данных</a></li>
-                        <li class="footer-bottom-item"><a href="#" class="footer-bottom-link">Согласие на получение
+                        <li class="footer-bottom-item"><a href="#" class="footer-bottom-link hoverMain">Согласие на получение
                                 рекламных материалов</a></li>
                     </ul>
                 </div>
@@ -792,7 +854,6 @@
                 <p class="years">2024</p>
             </div>
         </div>
-   
     </footer>
     <!-- footer end -->
 

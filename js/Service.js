@@ -1,3 +1,17 @@
+let hmgr = document.querySelector(".header-hmgr");
+let exit = document.querySelector(".exit-btn");
+let hamburger_bar = document.querySelector(".hamburger-bar");
+let body = document.querySelector("body");
+
+hmgr.addEventListener("click", function () {
+  hamburger_bar.style.left = "0";
+  body.style.overflowY = "hidden";
+});
+exit.addEventListener("click", function () {
+  hamburger_bar.style.left = "-100%";
+  body.style.overflowY = "scroll";
+});
+
 let btn = document.querySelector(".light");
 let industryCol = document.querySelector(".industryCol");
 let industryColRectagle = document.querySelector(".industryColRectagle");
@@ -18,41 +32,36 @@ var swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next1",
     prevEl: ".swiper-button-prev1",
   },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  },
 });
 
-const tabs = [
-  {
-    element: document.querySelector(".platformPaginationBtnSlide-1"),
-    index: 0,
-  },
-  {
-    element: document.querySelector(".platformPaginationBtnSlide-2"),
-    index: 1,
-  },
-  {
-    element: document.querySelector(".platformPaginationBtnSlide-3"),
-    index: 2,
-  },
-];
-
-// Barcha tablar uchun hodisa qo'shadigan funksiya
-const handleTabClick = (clickedTab, index) => {
-  return (e) => {
-    e.preventDefault();
-    swiper.slideTo(index, 0);
-
-    // Aktiv klasslarni boshqarish
-    tabs.forEach(({ element }) =>
-      element.classList.remove("platformPaginationBtnActive")
-    );
-    clickedTab.classList.add("platformPaginationBtnActive");
-  };
+let swiperpaginationbullet = document.querySelectorAll(
+  ".swiper-pagination-bullet"
+);
+const tabFun = () => {
+  swiperpaginationbullet[0].textContent =
+    ">> Безопасность и устойчивость бизнеса";
+  swiperpaginationbullet[1].textContent = ">> Развитие бизнеса";
+  swiperpaginationbullet[2].textContent = ">> Экспертная поддержка";
 };
+tabFun();
 
-// Har bir tab uchun hodisa tayinlash
-tabs.forEach(({ element, index }) => {
-  element.addEventListener("click", handleTabClick(element, index));
-});
+// var trustSwiper = new Swiper(".trustSwiper", {
+//   slidesPerView: 4,
+//   spaceBetween: 20,
+//   navigation: {
+//     nextEl: ".swiper-button-next2",
+//     prevEl: ".swiper-button-prev2",
+//   },
+// });
+
+
 
 var swiper2 = new Swiper(".mySwiper2", {
   pagination: {
@@ -68,7 +77,33 @@ var swiper2 = new Swiper(".mySwiper2", {
   },
 });
 
-var swiper2 = new Swiper(".mySwiper3", {
+let trustLogoBox = document.querySelectorAll(".trustLogoBox")
+
+trustLogoBox.forEach(function(item, index){
+  item.addEventListener("click", function(){
+    trustLogoBox.forEach(function(item, index){
+      item.classList.remove("trustLogoBoxActive")
+    })
+    swiper2.slideTo(index,0)
+    trustLogoBox[index].classList.add("trustLogoBoxActive")
+  })
+})
+trustLogoBox[0].addEventListener("click", function(){
+  
+})
+trustLogoBox[1].addEventListener("click", function(){
+  swiper2.slideTo(1,0)
+})
+trustLogoBox[2].addEventListener("click", function(){
+  swiper2.slideTo(2,0)
+})
+trustLogoBox[3].addEventListener("click", function(){
+  swiper2.slideTo(3,0)
+})
+
+
+
+var swiper10 = new Swiper(".mySwiper3", {
   slidesPerView: 5.1,
   spaceBetween: 20,
   pagination: {
@@ -116,10 +151,83 @@ priceRow.forEach(function (item, index) {
 
 var swiper3 = new Swiper(".mySwiper4", {
   navigation: {
-    nextEl: ".swiper-button-next3",
-    prevEl: ".swiper-button-prev3",
+    nextEl: ".swiper-button-next4",
+    prevEl: ".swiper-button-prev4",
+  },
+  pagination: {
+    el: ".swiper-pagination4",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
   },
 });
+
+var swiper4 = new Swiper(".mySwiper5", {
+  slidesPerView: 2,
+  spaceBetween: 20,
+  allowTouchMove: false, 
+  navigation: {
+    nextEl: ".swiper-button-next4",
+    prevEl: ".swiper-button-prev4",
+  },
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    400: {
+      slidesPerView: 1.3,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 1.7,
+      spaceBetween: 20,
+    },
+  },
+});
+
+let swiperpaginationbullet2 = document.querySelectorAll(
+  ".workLeft .swiper-pagination-bullet"
+);
+
+const tabFun2 = () => {
+  swiperpaginationbullet2[0].innerHTML = `
+   <span>01</span>
+   Архитектура и проектирование, максимально учитывающие задачи бизнеса
+  `;
+
+  swiperpaginationbullet2[1].innerHTML = `
+     <span>02</span>
+   Эффективная доставка приложений (DevOps)
+  `;
+
+  swiperpaginationbullet2[2].innerHTML = `
+       <span>03</span>
+   SRE
+  `;
+
+  swiperpaginationbullet2[3].innerHTML = `
+    <span>04</span>
+   Данные
+  `;
+
+  swiperpaginationbullet2[4].innerHTML = `
+     <span>05</span>
+   ML
+  `;
+
+  swiperpaginationbullet2[5].innerHTML = `
+     <span>06</span>
+   Развертывание и поддержка внутренних корпоративных приложений
+  `;
+
+  swiperpaginationbullet2[6].innerHTML = `
+  <span>07</span>
+   Развитие и оптимизация инфраструктуры
+  `;
+};
+tabFun2();
 
 // const submitButton = document.querySelector("#submitButton");
 
@@ -128,16 +236,16 @@ var swiper3 = new Swiper(".mySwiper4", {
 // });
 
 const modal = document.querySelector(".modal");
-const modalOpen = document.querySelectorAll(".modalOpen")
-const modalCloseBg = document.querySelector(".modalCloseBg")
-modalOpen.forEach(function(item){
+const modalOpen = document.querySelectorAll(".modalOpen");
+const modalCloseBg = document.querySelector(".modalCloseBg");
+modalOpen.forEach(function (item) {
   item.addEventListener("click", () => {
     modal.style.display = "block";
-  })
-})
+  });
+});
 modalCloseBg.addEventListener("click", () => {
   modal.style.display = "none";
-})
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   const modal = document.querySelector(".modal");
@@ -273,12 +381,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
-
-const workDropdownBtn = document.querySelector(".workDropdownBtn")
-const workDropdown = document.querySelector(".workDropdown")
+const workDropdownBtn = document.querySelector(".workDropdownBtn");
+const workDropdown = document.querySelector(".workDropdown");
 
 workDropdownBtn.addEventListener("click", () => {
-  workDropdown.classList.toggle("show")
-  workDropdownBtn.classList.toggle("mb-0")
-})
+  workDropdown.classList.toggle("show");
+  workDropdownBtn.classList.toggle("mb-0");
+});

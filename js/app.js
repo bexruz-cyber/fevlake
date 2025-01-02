@@ -15,12 +15,28 @@ exit.addEventListener("click", function () {
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  },
   navigation: {
     nextEl: ".swiper-button-next1",
     prevEl: ".swiper-button-prev1",
   },
 });
 console.log(swiper[0]);
+
+let swiperpaginationbullet = document.querySelectorAll(".swiper-pagination-bullet") 
+const tabFun = () => {
+    swiperpaginationbullet[0].textContent = ">> Data Platform"
+    swiperpaginationbullet[1].textContent = ">> Infrastructure"
+    swiperpaginationbullet[2].textContent = ">> Yandex.cloud"
+    swiperpaginationbullet[3].textContent = ">> DevSecOps"
+}
+tabFun()
 
 document.addEventListener("DOMContentLoaded", () => {
   const tabs = [
