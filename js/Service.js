@@ -126,6 +126,30 @@ var swiper3 = new Swiper(".mySwiper4", {
   },
 });
 
+var swiper4 = new Swiper(".mySwiper5", {
+  slidesPerView: 2,
+  spaceBetween: 20,
+  allowTouchMove: false, 
+  navigation: {
+    nextEl: ".swiper-button-next4",
+    prevEl: ".swiper-button-prev4",
+  },
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    400: {
+      slidesPerView: 1.3,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 1.7,
+      spaceBetween: 20,
+    },
+  },
+});
+
 let swiperpaginationbullet2 = document.querySelectorAll(
   ".workLeft .swiper-pagination-bullet"
 );

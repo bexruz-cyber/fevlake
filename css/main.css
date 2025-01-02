@@ -5726,13 +5726,14 @@ html {
 
 .workLeftTitle {
     font-family: PP Object Sans;
-    font-size: 26px;
+    font-size: 6px;
     font-weight: 800;
     line-height: 31.2px;
     color: #6D6969;
     display: flex;
     align-items: start;
     gap: 20px;
+    width: 100%;
 }
 
 
@@ -5929,6 +5930,13 @@ html {
     transition: all .3s;
 }
 
+.swiper-wrapper-work > .swiper-slide-active > .workLeftTitle{
+    color: #D84F54 !important;
+}
+.workMaxLgHidden{
+    display: none !important;
+}
+
 
 @media(max-width: 1240px) {
     .workCenter {
@@ -5957,20 +5965,16 @@ html {
 }
 
 @media(max-width: 1024px) {
-    .workCenter {
-        flex-direction: column;
-        gap: 0;
+    .workMaxLgHidden{
+        display: block !important;
     }
 
     .workLeft {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        gap: 20px;
-        padding-top: 0;
-        width: 1024px;
         max-width: 1024px;
-        overflow-x: scroll;
-        padding-bottom: 0;
+        width: 100%;
+    }
+    .workLeftLgHidden{
+        display: none;
     }
 
     .workRight {
@@ -5985,7 +5989,6 @@ html {
         position: static;
         font-size: 26px;
         line-height: 31.2px;
-        width: 487px;
         top: 0;
         left: 0;
     }
@@ -6009,10 +6012,11 @@ html {
 
 
     .workLeftTitle {
-        width: 487px;
+        width: 100%;
         font-size: 26px;
         line-height: 31.2px;
     }
+
 
     .workLeft::-webkit-scrollbar {
         display: none;
