@@ -52,6 +52,17 @@ const tabFun = () => {
 };
 tabFun();
 
+// var trustSwiper = new Swiper(".trustSwiper", {
+//   slidesPerView: 4,
+//   spaceBetween: 20,
+//   navigation: {
+//     nextEl: ".swiper-button-next2",
+//     prevEl: ".swiper-button-prev2",
+//   },
+// });
+
+
+
 var swiper2 = new Swiper(".mySwiper2", {
   pagination: {
     el: ".swiper-pagination1",
@@ -66,7 +77,33 @@ var swiper2 = new Swiper(".mySwiper2", {
   },
 });
 
-var swiper2 = new Swiper(".mySwiper3", {
+let trustLogoBox = document.querySelectorAll(".trustLogoBox")
+
+trustLogoBox.forEach(function(item, index){
+  item.addEventListener("click", function(){
+    trustLogoBox.forEach(function(item, index){
+      item.classList.remove("trustLogoBoxActive")
+    })
+    swiper2.slideTo(index,0)
+    trustLogoBox[index].classList.add("trustLogoBoxActive")
+  })
+})
+trustLogoBox[0].addEventListener("click", function(){
+  
+})
+trustLogoBox[1].addEventListener("click", function(){
+  swiper2.slideTo(1,0)
+})
+trustLogoBox[2].addEventListener("click", function(){
+  swiper2.slideTo(2,0)
+})
+trustLogoBox[3].addEventListener("click", function(){
+  swiper2.slideTo(3,0)
+})
+
+
+
+var swiper10 = new Swiper(".mySwiper3", {
   slidesPerView: 5.1,
   spaceBetween: 20,
   pagination: {
