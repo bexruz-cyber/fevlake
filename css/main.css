@@ -1693,7 +1693,9 @@ html {
 
 
 .rebrain-row {
-    padding: 72px 0 233px 0;
+    max-width: 1100px;
+    width: 100%;
+    padding: 72px 234px 233px 0;
     height: 404px;
     background-color: #F8F7F7;
     background-image: url(../img/rebrain/logo_rebrain.svg);
@@ -1795,9 +1797,6 @@ html {
     font-size: 22px;
     font-weight: 500;
     line-height: 28.6px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: #2B2B2B;
     z-index: none;
 
@@ -1811,9 +1810,8 @@ html {
 .rebrain-col {
     display: flex;
     gap: 30px;
-    align-items: center;
     flex-direction: column;
-    margin-left: -40px;
+    margin-left: -130px;
     margin-top: 50px;
     z-index: 11;
 }
@@ -1828,7 +1826,7 @@ html {
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: #6D6969;
-
+    margin-left: 170px;
 }
 
 
@@ -1861,14 +1859,13 @@ html {
     font-weight: 800;
     line-height: 20.8px;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: #F8F7F7;
     background-image: url(../img/rebrain/telegram.svg);
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     text-decoration: none;
+    width: 160px;
 }
 
 .rebrain-span {
@@ -1943,11 +1940,13 @@ html {
     .rebrain-list {
         margin-left: 30px;
     }
+    .rebrain-col-text{
+        margin-left: 0;
+    }
 
     .rebrain-row {
         max-width: 730px;
         padding: 72px 0 180px 0;
-
         background-color: #F8F7F7;
         background-image: url(../img/rebrain/logo_rebrain.svg);
         background-repeat: no-repeat;
@@ -1965,6 +1964,7 @@ html {
         position: absolute;
         left: 0;
         bottom: -80px;
+        flex-wrap: wrap;
     }
 
     .rebrain-col {
@@ -2023,6 +2023,7 @@ html {
 
     .rebrain-list-2 {
         gap: 10px;
+        position: static;
     }
 }
 
@@ -2175,6 +2176,7 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    color: #363636;
 }
 
 .platformBottomText {
