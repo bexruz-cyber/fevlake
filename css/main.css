@@ -2935,7 +2935,7 @@ html {
     margin-bottom: 50px;
 }
 
-.span {
+.title > span {
     color: #F3585B;
 }
 
