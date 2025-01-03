@@ -1961,7 +1961,7 @@ html {
     }
 
     .rebrain-list {
-        margin-left: 30px;
+        margin-left: 10px;
     }
 
     .rebrain-col-text {
@@ -1984,7 +1984,7 @@ html {
         gap: 20px;
         align-items: center;
         list-style: none;
-        margin-left: 30px;
+        margin-left: 10px;
         position: absolute;
         left: 0;
         bottom: -80px;
