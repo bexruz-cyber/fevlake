@@ -1770,6 +1770,7 @@ html {
     margin-bottom: 12px;
     position: relative;
     margin: 0;
+    align-items: start;
 
 }
 
@@ -1796,6 +1797,7 @@ html {
     display: flex;
     gap: 12px;
     margin: 0;
+    align-items: start;
 
 
 }
@@ -2048,6 +2050,17 @@ html {
     .rebrain-list-2 {
         gap: 10px;
         position: static;
+    }
+}
+@media(max-width: 378px){
+    .rebrain-item-text{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .rebrain-item-text2{
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 81px;
     }
 }
 
