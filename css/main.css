@@ -2013,7 +2013,10 @@ html {
 }
 
 @media(max-width: 600px) {
-
+    .rebrain{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
     .rebrain-link-1 {
         max-width: 106px;
         width: 100%;
@@ -2076,6 +2079,10 @@ html {
     }
     .rebrain-list-2{
         margin-bottom: -40px;
+    }
+    .rebrain{
+        padding-bottom: 50px;
+        padding-top: 50px;
     }
 }
 
