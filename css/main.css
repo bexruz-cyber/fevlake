@@ -1142,13 +1142,14 @@ html {
     }
 
     .komanda-cards-col1 {
-        grid-column-gap: 10px;
+        display: flex;
+        grid-column-gap: 30px !important;
         max-width: 722px;
         width: 100%;
     }
 
     .komanda-cards-col2 {
-        grid-column-gap: 10px;
+        grid-column-gap: 30px !important;
         max-width: 880px;
         width: 100%;
     }
@@ -6231,7 +6232,6 @@ html {
 
 .footer-line {
     height: 1px;
-    color: #363636;
     background-color: #363636;
 }
 
