@@ -1939,7 +1939,8 @@ html {
     .rebrain-list {
         margin-left: 30px;
     }
-    .rebrain-col-text{
+
+    .rebrain-col-text {
         margin-left: 0;
     }
 
@@ -2936,7 +2937,7 @@ html {
     margin-bottom: 50px;
 }
 
-.title > span {
+.title>span {
     color: #F3585B;
 }
 
@@ -3660,6 +3661,10 @@ html {
 }
 
 @media(max-width:470px) {
+    .problemListItem {
+        font-size: 16px;
+        line-height: 20px;
+    }
 
     .problemArrow {
         right: -96px;
@@ -3842,7 +3847,8 @@ html {
     max-width: 180px;
     color: #6D6969;
 }
-.trustLogoBoxActive{
+
+.trustLogoBoxActive {
     color: #D84F54;
 }
 
@@ -3903,6 +3909,7 @@ html {
     .trustLogoBox:first-child {
         padding-top: 40px;
     }
+
 }
 
 @media(max-width:378px) {
@@ -5437,8 +5444,9 @@ html {
         margin-right: auto;
     }
 }
-@media(max-width: 378px){
-    .contactTitle{
+
+@media(max-width: 378px) {
+    .contactTitle {
         font-size: 26px;
         line-height: 31.2px;
         margin-bottom: 24px;
@@ -5638,10 +5646,12 @@ html {
     .modalBox {
         padding: 30px 10px 10px 10px;
     }
-    .modalBtn{
+
+    .modalBtn {
         margin-top: 133px;
     }
-    .modalTitle{
+
+    .modalTitle {
         margin-bottom: 24px;
     }
 }
@@ -5947,10 +5957,11 @@ html {
     transition: all .3s;
 }
 
-.swiper-wrapper-work > .swiper-slide-active > .workLeftTitle{
+.swiper-wrapper-work>.swiper-slide-active>.workLeftTitle {
     color: #D84F54 !important;
 }
-.workMaxLgHidden{
+
+.workMaxLgHidden {
     display: none !important;
 }
 
@@ -5982,7 +5993,7 @@ html {
 }
 
 @media(max-width: 1024px) {
-    .workMaxLgHidden{
+    .workMaxLgHidden {
         display: block !important;
     }
 
@@ -5990,7 +6001,8 @@ html {
         max-width: 1024px;
         width: 100%;
     }
-    .workLeftLgHidden{
+
+    .workLeftLgHidden {
         display: none;
     }
 
