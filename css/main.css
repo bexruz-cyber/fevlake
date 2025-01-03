@@ -1014,6 +1014,7 @@ html {
     align-items: center;
 }
 
+
 .komanda-card-main {
     padding: 20px 36px 97px 35px;
     background-color: #F8F7F7;
@@ -1207,6 +1208,27 @@ html {
     .komanda-information {
         margin-top: -100px;
     }
+    .komanda-cards-col1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 12px;
+        grid-row-gap: 35px;
+        max-width: 374px;
+
+    }
+
+    .komanda-cards-col2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 30px;
+        grid-column-gap: 12px;
+        grid-row-gap: 35px;
+        max-width: 374px;
+
+    }
+    .komanda-text{
+        margin-top: 50px;
+    }
 }
 
 @media (max-width:880px) {
@@ -1294,6 +1316,7 @@ html {
         margin-right: auto;
         max-width: 502px;
         margin-left: auto;
+        margin-top: 0;
     }
 
     .komanda-information {
@@ -1405,6 +1428,7 @@ html {
         max-width: 285px;
         text-align: center;
         margin-bottom: 0;
+        margin-top: 0;
     }
 
     .komanda-bottom {
@@ -1680,7 +1704,7 @@ html {
     max-width: 1620px;
     margin-left: auto;
     margin-right: auto;
-    padding-right: 20px;
+    padding-right: 10px;
 }
 
 
@@ -1921,7 +1945,7 @@ html {
     }
 
     .rebrain-title {
-        margin-left: 30px;
+        margin-left: 10px;
 
         font-family: PP Object Sans, sans-serif;
         font-size: 64px;
@@ -1968,7 +1992,7 @@ html {
     }
 
     .rebrain-col {
-        margin-left: 30px;
+        margin-left: 10px;
         align-items: start;
     }
 
