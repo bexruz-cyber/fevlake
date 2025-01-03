@@ -2060,7 +2060,22 @@ html {
     .rebrain-item-text2{
         font-size: 16px;
         line-height: 20px;
-        margin-bottom: 81px;
+        margin-bottom: 141px;
+    }
+    .rebrain-title{
+        font-size: 26px;
+        line-height: 31.2px;
+        top: -15px;
+    }
+    .rebrain-row{
+        height: auto;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        padding-top: 35px;
+        padding-right: 55px;
+    }
+    .rebrain-list-2{
+        margin-bottom: -40px;
     }
 }
 
