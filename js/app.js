@@ -32,14 +32,16 @@ console.log(swiper[0]);
 let swiperpaginationbullet = document.querySelectorAll(".swiper-pagination-bullet") 
 const tabFun3 = () => {
   const content = [
-    { index: 0, text: '>> Data Platform' },
-    { index: 1, text: '>> Infrastructure' },
-    { index: 2, text: '>> Yandex.cloud' },
-    { index: 3, text: '>> DevSecOps' }
+    {text: '>> Data Platform' },
+    {text: '>> Infrastructure' },
+    {text: '>> Yandex.cloud' },
+    {text: '>> DevSecOps' }
   ];
 
   content.forEach(item => {
-    swiperpaginationbullet[item.index].textContent = item.text;
+    swiperpaginationbullet.forEach(function(bullet) {
+      bullet.textContent = item.text;
+    })
   });
 };
 
