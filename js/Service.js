@@ -44,11 +44,26 @@ var swiper = new Swiper(".mySwiper", {
 let swiperpaginationbullet = document.querySelectorAll(
   ".swiper-pagination-bullet"
 );
+
+
+
 const tabFun = () => {
-  swiperpaginationbullet[0].textContent =
-    ">> Безопасность и устойчивость бизнеса";
-  swiperpaginationbullet[1].textContent = ">> Развитие бизнеса";
-  swiperpaginationbullet[2].textContent = ">> Экспертная поддержка";
+  const tabs = [
+    {
+      title: ">> Безопасность и устойчивость бизнеса",
+    },
+    {
+      title: ">> Развитие бизнеса",
+    },
+    {
+      title: ">> Экспертная поддержка",
+    }
+  ]
+  tabs.forEach(function(tab) {
+    swiperpaginationbullet.forEach(function(item) {
+      item.textContent = tab.title
+    })
+  })
 };
 tabFun();
 
@@ -192,42 +207,26 @@ let swiperpaginationbullet2 = document.querySelectorAll(
 );
 
 const tabFun2 = () => {
-  swiperpaginationbullet2[0].innerHTML = `
-   <span>01</span>
-   Архитектура и проектирование, максимально учитывающие задачи бизнеса
-  `;
+  const content = [
+    { index: 0, number: '01', text: 'Архитектура и проектирование, максимально учитывающие задачи бизнеса' },
+    { index: 1, number: '02', text: 'Эффективная доставка приложений (DevOps)' },
+    { index: 2, number: '03', text: 'SRE' },
+    { index: 3, number: '04', text: 'Данные' },
+    { index: 4, number: '05', text: 'ML' },
+    { index: 5, number: '06', text: 'Развертывание и поддержка внутренних корпоративных приложений' },
+    { index: 6, number: '07', text: 'Развитие и оптимизация инфраструктуры' }
+  ];
 
-  swiperpaginationbullet2[1].innerHTML = `
-     <span>02</span>
-   Эффективная доставка приложений (DevOps)
-  `;
-
-  swiperpaginationbullet2[2].innerHTML = `
-       <span>03</span>
-   SRE
-  `;
-
-  swiperpaginationbullet2[3].innerHTML = `
-    <span>04</span>
-   Данные
-  `;
-
-  swiperpaginationbullet2[4].innerHTML = `
-     <span>05</span>
-   ML
-  `;
-
-  swiperpaginationbullet2[5].innerHTML = `
-     <span>06</span>
-   Развертывание и поддержка внутренних корпоративных приложений
-  `;
-
-  swiperpaginationbullet2[6].innerHTML = `
-  <span>07</span>
-   Развитие и оптимизация инфраструктуры
-  `;
+  content.forEach(item => {
+    swiperpaginationbullet2[item.index].innerHTML = `
+      <span>${item.number}</span>
+      ${item.text}
+    `;
+  });
 };
+
 tabFun2();
+
 
 // const submitButton = document.querySelector("#submitButton");
 
